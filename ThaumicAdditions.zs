@@ -1,5 +1,11 @@
 import mods.thaumcraft.Infusion;
 
+// --- Vals ---
+
+// --- Removes ---
+mods.jei.JEI.removeAndHide(<thaumadditions:adaminite_fabric>);
+mods.jei.JEI.removeAndHide(<thaumadditions:mithminite_fabric>);
+
 
 // Mithminite Hood
 mods.thaumcraft.Infusion.removeRecipe("thaumadditions:mithminite_hood");
