@@ -14,21 +14,21 @@ recipes.remove(<storagedrawers:compdrawers>);
 recipes.addShaped(<storagedrawers:compdrawers>, 
 	[[<ore:plateStainlessSteel>, <ore:drawerBasic>, <ore:plateStainlessSteel>],
 	[<ore:plateStainlessSteel>, <gregtech:machine:211>, <ore:plateStainlessSteel>],
-	[<ore:plateObsidian>, <ore:drawerBasic>, <ore:plateObsidian>]]);
+	[<ore:plateVoid>, <ore:drawerBasic>, <ore:plateVoid>]]);
 
 // Drawer Controller
 recipes.remove(<storagedrawers:controller>);
 recipes.addShaped(<storagedrawers:controller>, 
 	[[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>],
 	[<thaumcraft:redstone_relay>, <ore:drawerBasic>, <thaumcraft:redstone_relay>],
-	[<ore:plateObsidian>, <ore:plateDiamond>, <ore:plateObsidian>]]);
+	[<ore:plateEnderEye>, <ore:plateDiamond>, <ore:plateEnderEye>]]);
 
 // Controller Slave
 recipes.remove(<storagedrawers:controllerslave>);
-recipes.addShaped(<storagedrawers:controller>, 
+recipes.addShaped(<storagedrawers:controllerslave>, 
 	[[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>],
 	[<thaumcraft:redstone_relay>, <ore:drawerBasic>, <thaumcraft:redstone_relay>],
-	[<ore:plateObsidian>, <ore:plateEnderEye>, <ore:plateObsidian>]]);
+	[<ore:plateDiamond>, <ore:plateEnderEye>, <ore:plateDiamond>]]);
 	
 // Framing Table
 recipes.remove(<storagedrawers:framingtable>);
@@ -41,7 +41,7 @@ recipes.addShaped(<storagedrawers:framingtable>,
 recipes.remove(<storagedrawers:upgrade_template>);
 recipes.addShaped(<storagedrawers:upgrade_template>,
 	[[<ore:screwSteel>, <ore:craftingPiston>, <ore:screwSteel>],
-	[<ore:screwSteel>, <ore:drawerBasic>, <ore:screwSteel],
+	[<ore:screwSteel>, <ore:drawerBasic>, <ore:screwSteel>],
 	[null, <ore:craftingToolScrewdriver>, null]]);
 assembler.recipeBuilder()
 	.inputs([<ore:drawerBasic>, <ore:craftingPiston>])
@@ -102,7 +102,7 @@ recipes.remove(<storagedrawers:drawer_key>);
 recipes.addShaped(<storagedrawers:drawer_key>,
 	[[null, <ore:boltGold>, <ore:plateSteel>],
 	[<storagedrawers:upgrade_template>, <ore:plateSteel>, <ore:stickGold>],
-	[<ore:plateGold, <ore:craftingToolSaw>]]);
+	[<ore:plateGold>, <ore:craftingToolSaw>, null]]);
 	
 // Concealment Key
 recipes.remove(<storagedrawers:shroud_key>);

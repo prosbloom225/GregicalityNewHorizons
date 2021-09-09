@@ -983,7 +983,7 @@ recipes.addShaped(<appliedenergistics2:part:520>,
 // ME Formation Plane
 recipes.remove(<appliedenergistics2:part:320>);
 recipes.addShaped(<appliedenergistics2:part:320>, 
-	[[<ore:craftingToolScrewdriver>, <ore:blockHopper>, <ore:craftingToolHardHammer>], 
+	[[<ore:craftingToolScrewdriver>, <minecraft:hopper>, <ore:craftingToolHardHammer>], 
 	[<ore:screwAluminium>, coreFormation, <ore:screwAluminium>], 
 	[<ore:crystalFluix>, <ore:crystalFluix>, <ore:crystalFluix>]]);
 
