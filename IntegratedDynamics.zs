@@ -17,17 +17,22 @@ mods.jei.JEI.removeAndHide(<integrateddynamics:drying_basin>);
 mods.jei.JEI.removeAndHide(<integrateddynamics:squeezer>);
 mods.jei.JEI.removeAndHide(<integrateddynamics:mechanical_squeezer>);
 mods.jei.JEI.removeAndHide(<integrateddynamics:mechanical_drying_basin>);
-
 mods.jei.JEI.removeAndHide(<integrateddynamics:energy_battery>);
 mods.jei.JEI.removeAndHide(<integrateddynamics:creative_energy_battery>);
 mods.jei.JEI.removeAndHide(<integrateddynamics:coal_generator>);
-
 mods.jei.JEI.removeAndHide(<integratedtunnels:part_interface_energy_item>);
 mods.jei.JEI.removeAndHide(<integratedtunnels:part_importer_energy_item>);
 mods.jei.JEI.removeAndHide(<integratedtunnels:part_exporter_energy_item>);
 mods.jei.JEI.removeAndHide(<integratedtunnels:part_importer_world_energy_item>);
 mods.jei.JEI.removeAndHide(<integratedtunnels:part_exporter_world_energy_item>);
-
+mods.jei.JEI.removeAndHide(<integrateddynamics:block_liquid_chorus>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:crystalized_chorus_block>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:crystalized_chorus_brick>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:crystalized_chorus_block_stairs>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:crystalized_chorus_brick_stairs>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:crystalized_chorus_chunk>);
+mods.jei.JEI.removeAndHide(<integrateddynamics:logic_director>);
+mods.jei.JEI.removeAndHide(<integratedterminals:chorus_glass>);
 
 // --- Recipes ---
 
@@ -197,7 +202,7 @@ assembler.recipeBuilder()
 	.duration(2000).EUt(64).buildAndRegister();
 
 // World Item Exporter
-recipes.remove(<integratedtunnels:part_exporter_world_item_item>)
+recipes.remove(<integratedtunnels:part_exporter_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_exporter_world_item_item>, 
 	[[<ore:craftingToolScrewdriver>, <minecraft:hopper>, <ore:craftingToolHardHammer>], 
 	[<ore:screwAluminium>, <integrateddynamics:variable_transformer:1>, <ore:screwAluminium>], 
@@ -208,7 +213,7 @@ assembler.recipeBuilder()
 	.duration(600).EUt(64).buildAndRegister();
 	
 // World Item Importer
-recipes.remove(<integratedtunnels:part_importer_world_item_item>)
+recipes.remove(<integratedtunnels:part_importer_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_importer_world_item_item>, 
 	[[<ore:craftingToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:craftingToolHardHammer>], 
 	[<ore:screwAluminium>, <integrateddynamics:variable_transformer>, <ore:screwAluminium>], 
