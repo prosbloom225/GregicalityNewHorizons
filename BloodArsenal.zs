@@ -8,6 +8,7 @@ val conveyorIv = <gregtech:meta_item_1:32634>;
 mods.jei.JEI.removeAndHide(<bloodarsenal:base_item:3>);
 mods.jei.JEI.removeAndHide(<bloodarsenal:sigil_sentience>);
 mods.jei.JEI.removeAndHide(<bloodarsenal:bound_stick>);
+mods.jei.JEI.removeAndHide(<bloodarsenal:warp_blade>);
 
 
 // --- Recipes ---
@@ -198,13 +199,14 @@ recipes.addShaped(<bloodarsenal:gem:1>,
 	[<ore:dustGlowstone>, <bloodmagic:blood_rune:3>, <ore:dustGlowstone>]]);	
 
 // Gem of Tartaric Will
-recipes.remove(<bloodarsenal:gem:1>);
+recipes.remove(<bloodarsenal:gem:2>);
 recipes.addShaped(<bloodarsenal:gem:2>, 
-	[[<bloodmagic:soul_gem>, <ore:ingotGold>, <bloodmagic:soul_gem>.], 
+	[[<bloodmagic:soul_gem>, <ore:ingotGold>, <bloodmagic:soul_gem>], 
 	[<ore:blockGlass>, <bloodarsenal:blood_capacitor>, <ore:blockGlass>], 
 	[<ore:blockStainlessSteel>, <ore:ingotGold>, <ore:blockStainlessSteel>]]);
 
 // Sigil of Swimming
+mods.bloodmagic.AlchemyArray.removeRecipe(<bloodarsenal:base_item:6>, <bloodmagic:slate:1>);
 mods.thaumcraft.Infusion.registerRecipe("sigil_of_swimming", "", <bloodarsenal:sigil_swimming>, 10, 
 	[<aspect:aer> *64, <aspect:aqua> *64, <aspect:vacuos> *64, <aspect:terra> *48, <aspect:praecantatio> *32, <aspect:auram> *24, <aspect:metallum> *16], 
 	<bloodmagic:sigil_void>, 
@@ -214,6 +216,7 @@ mods.thaumcraft.Infusion.registerRecipe("sigil_of_swimming", "", <bloodarsenal:s
 	<forge:bucketfilled>.withTag({FluidName: "oxygen", Amount: 1000}), <bloodarsenal:base_item:6>]);	
 	
 // Ender Sigil
+mods.bloodmagic.AlchemyArray.removeRecipe(<bloodarsenal:base_item:7>, <bloodmagic:slate:3>);
 mods.thaumcraft.Infusion.registerRecipe("sigil_ender", "", <bloodarsenal:sigil_ender>, 16, 
 	[<aspect:cognitio> *72, <aspect:potentia> *64, <aspect:vinculum> *48, <aspect:alkimia> *32, <aspect:vacuos> *16, <aspect:alienis> *16, <aspect:humanus> *16, <aspect:desiderium> *8], 
 	<bloodmagic:sigil_ender_severance>, 
@@ -229,6 +232,7 @@ mods.thaumcraft.Infusion.registerRecipe("sigil_augmented_holding", "", <bloodars
 	<minecraft:ghast_tear>, <bloodmagic:slate:3>, <minecraft:blaze_rod>, <ore:plateTitanium>, <minecraft:ghast_tear>, <bloodmagic:slate:3>]);	
 	
 // Lightning Sigil
+mods.bloodmagic.AlchemyArray.removeRecipe(<bloodarsenal:base_item:8>, <bloodmagic:slate:3>);
 mods.thaumcraft.Infusion.registerRecipe("sigil_lightning", "", <bloodarsenal:sigil_lightning>, 16, 
 	[<aspect:aer> *72, <aspect:aqua> *72, <aspect:terra> *64, <aspect:potentia> *48, <aspect:machina> *16, <aspect:vacuos> *8], 
 	<bloodmagic:slate:4>, 
@@ -236,6 +240,7 @@ mods.thaumcraft.Infusion.registerRecipe("sigil_lightning", "", <bloodarsenal:sig
 	<bloodmagic:sigil_water>, <bloodarsenal:slate:3>, <ore:blockBloodInfusedIron>, <bloodarsenal:blood_diamond:3>]);	
 	
 // Sigil of Divinity
+mods.bloodmagic.AlchemyArray.removeRecipe(<bloodarsenal:base_item:9>, <bloodmagic:slate:4>);
 mods.thaumcraft.Infusion.registerRecipe("sigil_divinity", "", <bloodarsenal:sigil_divinity>, 18, 
 	[<aspect:aer> *72, <aspect:praemunio> *64, <aspect:ignis> *64, <aspect:aqua> *48, <aspect:terra> *32, <aspect:ordo> *32, <aspect:perditio> *16, <aspect:alkimia> *8], 
 	<bloodmagic:sigil_elemental_affinity>, 

@@ -58,7 +58,7 @@ mods.jei.JEI.removeAndHide(<bloodmagic:component:30>);
 mods.jei.JEI.removeAndHide(<bloodmagic:experience_tome>);
 mods.jei.JEI.removeAndHide(<bloodmagic:altar_maker>);
 
-mods.jei.JEI.removeAndHide(<bloodmagic:arcane_ashes>);
+//mods.jei.JEI.removeAndHide(<bloodmagic:arcane_ashes>);
 mods.jei.JEI.removeAndHide(<bloodmagic:soul_snare>);
 mods.jei.JEI.removeAndHide(<bloodmagic:cutting_fluid:*>);
 mods.jei.JEI.removeAndHide(<bloodmagic:alchemic_vial>);
@@ -885,6 +885,54 @@ mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:soul_gem:3>, <bloodmagic:soul_g
 // Grand Tartaric Gem
 mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem:3>, <minecraft:nether_star>]);
 mods.bloodmagic.BloodAltar.addRecipe(<bloodmagic:soul_gem:4>, <bloodmagic:soul_gem:3>, 3, 250000, 20, 20);
+
+// Sentient Sword
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>, <minecraft:iron_sword>]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("sentient_sword", "", 150, 
+	[<aspect:instrumentum> *64, <aspect:vitreus> *64, <aspect:aversio> *64, <aspect:volatus> *32, <aspect:praecantatio> *24], 
+	<bloodmagic:sentient_sword>, 
+	[[<ore:screwAluminium>, <bloodmagic:slate>, <ore:screwAluminium>], 
+	[<ore:plateAluminium>, <thaumcraft:elemental_sword>, <ore:plateAluminium>], 
+	[<ore:craftingToolHardHammer>, <bloodmagic:slate>, <ore:craftingToolScrewdriver>]]);	
+	
+// Sentient Bow
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bow>, <bloodmagic:soul_gem:1>, <minecraft:string>, <minecraft:string>]);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("sentient_bow", "", 150, 
+	[<aspect:instrumentum> *64, <aspect:vitreus> *64, <aspect:aer> *64, <aspect:volatus> *32, <aspect:praecantatio> *24], 
+	<bloodmagic:sentient_bow>, 
+	[[<ore:screwAluminium>, <bloodmagic:slate>, <ore:screwAluminium>], 
+	[<ore:plateAluminium>, <thaumcraft:turret>, <ore:plateAluminium>], 
+	[<ore:craftingToolHardHammer>, <bloodmagic:slate>, <ore:craftingToolScrewdriver>]]);
+
+// Sentient Armour Gem	
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:diamond_chestplate>, <bloodmagic:soul_gem:1>, <minecraft:obsidian>, <minecraft:iron_block>]);
+mods.thaumcraft.Infusion.registerRecipe("sentient_armour_gem", "", <bloodmagic:sentient_armour_gem>, 8, 
+	[<aspect:praemunio> *128, <aspect:vitreus> *64, <aspect:terra> *64, <aspect:ordo> *32, <aspect:cognitio> *24, <aspect:perditio> *16, <aspect:desiderium> *8], 
+	<thaumicaugmentation:material:5>, 
+	[<minecraft:diamond_helmet>, <avaritia:resource>, <minecraft:diamond_chestplate>, <avaritia:resource>, 
+	<minecraft:diamond_leggings>, <avaritia:resource>, <minecraft:diamond_boots>, <avaritia:resource>]);	
+
+// Sentient Axe
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>, <minecraft:iron_axe>]);
+mods.thaumcraft.Infusion.registerRecipe("sentient_axe", "", <bloodmagic:sentient_axe>, 6, 
+	[<aspect:instrumentum> *64, <aspect:vitreus> *64, <aspect:aversio> *64, <aspect:volatus> *32, <aspect:cognitio> *24, <aspect:perditio> *16, <aspect:desiderium> *8], 
+	<thaumicbases:thauminiteaxe>, 
+	[<avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>]);	
+
+// Sentient Pickaxe
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>, <minecraft:iron_pickaxe>]);
+mods.thaumcraft.Infusion.registerRecipe("sentient_pickaxe", "", <bloodmagic:sentient_pickaxe>, 6, 
+	[<aspect:instrumentum> *64, <aspect:vitreus> *64, <aspect:terra> *64, <aspect:aer> *32, <aspect:cognitio> *24, <aspect:perditio> *16, <aspect:desiderium> *8], 
+	<thaumicbases:thauminitepickaxe>, 
+	[<avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>]);	
+	
+	
+// Sentient Shovel
+mods.bloodmagic.TartaricForge.removeRecipe([<bloodmagic:soul_gem>, <minecraft:iron_shovel>]);
+mods.thaumcraft.Infusion.registerRecipe("sentient_shovel", "", <bloodmagic:sentient_shovel>, 6, 
+	[<aspect:instrumentum> *64, <aspect:vitreus> *64, <aspect:terra> *64, <aspect:aer> *32, <aspect:cognitio> *24, <aspect:perditio> *16, <aspect:desiderium> *8], 
+	<thaumicbases:thauminiteshovel>, 
+	[<avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>, <avaritia:resource>, <ore:plateStainlessSteel>]);	
 
 // Node Router
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:reeds>, <bloodmagic:slate:1>, <minecraft:dye:4>, <minecraft:dye:4>]);
