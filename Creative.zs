@@ -49,3 +49,6 @@ recipes.remove(<storagedrawers:upgrade_creative>);
 
 // Creative Vending Upgrade
 recipes.remove(<storagedrawers:upgrade_creative:1>);
+
+// Creative Activation Crystal
+recipes.remove(<bloodmagic:activation_crystal:2>); 
