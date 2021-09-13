@@ -6,6 +6,23 @@ import mods.thaumcraft.Infusion;
 mods.jei.JEI.removeAndHide(<thaumadditions:adaminite_fabric>);
 mods.jei.JEI.removeAndHide(<thaumadditions:mithminite_fabric>);
 
+// --- Recipes
+
+
+// Seal Globe
+mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumadditions:seal_globe>);
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("seal_globe", "AR_SEAL_GLOBE",  100, 
+	[<aspect:terra> *1, <aspect:aer> *1, <aspect:ignis> *1, <aspect:aqua> *1, <aspect:ordo> *1, <aspect:perditio> *1], 
+	<thaumadditions:seal_globe>, 
+	[[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], 
+	[<ore:blockGlass>, <thaumcraft:filter>, <ore:blockGlass>], 
+	[<ore:plateGold>, <thaumcraft:crystal_essence>.withTag({Aspects: [{amount: 1, key: "imperium"}]}), <ore:plateGold>]]);
+	
+
+
+
+
+
 
 // Mithminite Hood
 mods.thaumcraft.Infusion.removeRecipe("thaumadditions:mithminite_hood");

@@ -1025,7 +1025,7 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);
 mods.thaumcraft.Infusion.registerRecipe("seal_breaker", "SEALBREAK", <thaumcraft:seal:12>, 12, 
 	[<aspect:instrumentum> *32, <aspect:machina> *24, <aspect:perditio> *16, <aspect:praecantatio> *8], 
 	<thaumcraft:seal:7>, 
-	[<thaumcraft:elemental_pick>, <ore:oreCrystalAir>, <thaumcraft:elemental_axe>, <ore:oreCrystalEarth>, <thaumcraft:elemental_shovel>, <ore:oreCrystalFire]);
+	[<thaumcraft:elemental_pick>, <ore:oreCrystalAir>, <thaumcraft:elemental_axe>, <ore:oreCrystalEarth>, <thaumcraft:elemental_shovel>, <ore:oreCrystalFire>]);
 	
 // Control Seal - Use
 mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:13>);
