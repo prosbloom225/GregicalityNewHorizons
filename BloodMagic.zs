@@ -133,7 +133,7 @@ recipes.remove(<bloodmagic:blood_rune:5>);
 mods.thaumcraft.Infusion.registerRecipe("displacement_rune", "", <bloodmagic:blood_rune:5>, 6, 
 	[<aspect:aqua> *32, <aspect:praecantatio> *24, <aspect:motus> *18, <aspect:potentia> *12, <aspect:terra> *8, <aspect:cognitio> *4], 
 	<bloodarsenal:slate:2>, 
-	[pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <tg:sharped_crystal_water>, <bloodmagic:slate:2>]);
+	[pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <ore:oreCrystalWater>, <bloodmagic:slate:2>, pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <tg:sharped_crystal_water>, <bloodmagic:slate:2>]);
 	
 // Rune of Capacity
 recipes.remove(<bloodmagic:blood_rune:6>);

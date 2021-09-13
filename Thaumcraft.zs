@@ -910,11 +910,10 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:amulet_vis:1>);
 mods.thaumcraft.Infusion.registerRecipe("amulet_of_vis", "VISAMULET", <thaumcraft:amulet_vis:1>, 10, 
 	[<aspect:potentia> *88, <aspect:praecantatio> *88, <aspect:vacuos> *48, <aspect:auram> *48, <aspect:vitreus> *24], 
 	<thaumcraft:baubles>, 
-	[<ore:oreCrystalAir>, <tg:sharped_crystal_air>, <ore:gemExquisiteDiamond>, <ore:oreCrystalEarth>, <tg:sharped_crystal_air>, <ore:gemExquisiteDiamond>, 
-	<ore:oreCrystalFire>, <tg:sharped_crystal_fire>, <ore:gemExquisiteDiamond>, <ore:oreCrystalWater>, <tg:sharped_crystal_water>]);
+	[<ore:oreCrystalAir>, <ore:gemExquisiteDiamond>, <ore:oreCrystalEarth>, <ore:gemExquisiteDiamond>, 
+	<ore:oreCrystalFire>, <ore:gemExquisiteDiamond>, <ore:oreCrystalWater>]);
 	
 // Cloudstepper Ring
-<thaumcraft:cloud_ring>
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:cloud_ring>);
 mods.thaumcraft.Infusion.registerRecipe("cloud_ring", "VISAMULET", <thaumcraft:cloud_ring>, 4, 
 	[<aspect:potentia> *32, <aspect:praecantatio> *16, <aspect:volatus> *16], 
@@ -922,7 +921,6 @@ mods.thaumcraft.Infusion.registerRecipe("cloud_ring", "VISAMULET", <thaumcraft:c
 	[<minecraft:feather>, <ore:plateAluminium>, <minecraft:feather>, <ore:plateAluminium>, <minecraft:feather>, <ore:plateAluminium>]);
 	
 // Charm of Undying
-<thaumcraft:cloud_ring>
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:charm_undying>);
 mods.thaumcraft.Infusion.registerRecipe("charm_undying", "VISAMULET", <thaumcraft:charm_undying>, 4, 
 	[<aspect:victus> *32, <aspect:praecantatio> *16, <aspect:ordo> *16], 
@@ -946,14 +944,14 @@ mods.thaumcraft.Infusion.registerRecipe("blank_lesser_focus", "BASEAUROMANCY", <
 	[<ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>, <bloodmagic:slate:1>, <ore:plateStainlessSteel>]);
 	
 // Blank Advanced Focus
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:focus_2>);
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_2>);
 mods.thaumcraft.Infusion.registerRecipe("blank_advanced_focus", "FOCUSADVANCED", <thaumcraft:focus_2>, 14, 
 	[<aspect:potentia> *128, <aspect:praecantatio> *128, <aspect:auram> *64], 
 	<gregtech:meta_item_1:32725>, 
 	[<ore:plateTitanium>, <bloodmagic:slate:2>, <ore:plateTitanium>, <bloodmagic:slate:2>, <ore:plateTitanium>, <bloodmagic:slate:2>, <ore:plateTitanium>]);
 	
 // Blank Greater Focus
-mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:focus_3>);
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:focus_3>);
 mods.thaumcraft.Infusion.registerRecipe("blank_greater_focus", "FOCUSGREATER", <thaumcraft:focus_3>, 18, 
 	[<aspect:potentia> *256, <aspect:praecantatio> *256, <aspect:auram> *128], 
 	<gregtech:meta_item_1:32726>, 
@@ -961,7 +959,7 @@ mods.thaumcraft.Infusion.registerRecipe("blank_greater_focus", "FOCUSGREATER", <
 	
 // Focus Pouch
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:focus_pouch>);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("caster_basic", "FOCUSPOUCH",  100, 
+mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("focus_pouch", "FOCUSPOUCH",  100, 
 	[<aspect:terra> *20, <aspect:ordo> *20, <aspect:perditio> *20], 
 	<thaumcraft:focus_pouch>, 
 	[[<ore:boltGold>, <ore:ringBrass>, <ore:boltGold>], 
@@ -972,7 +970,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("caster_basic", "FOCUSPOUCH
 recipes.remove(<thaumcraft:golem_bell>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("golemancers_ball", "BASEGOLEMANCY",  10, 
 	[<aspect:terra> *20, <aspect:ordo> *20, <aspect:perditio> *20], 
-	<thaumcraft:focus_pouch>, 
+	<thaumcraft:golem_bell>, 
 	[[<ore:craftingToolScrewdriver>, <ore:plateNetherQuartz>, <ore:boltNetherQuartz>], 
 	[<ore:screwIron>, <ore:plateNetherQuartz>, <ore:plateNetherQuartz>], 
 	[<ore:stickWood>,<ore:screwIron>, <ore:craftingToolFile>]]);
@@ -985,3 +983,53 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("blank_seal", "BASEGOLEMANC
 	[[<ore:plateThaumium>, <minecraft:netherbrick>, <ore:plateThaumium>], 
 	[<minecraft:brick>, <ore:nitor>, <minecraft:brick>], 
 	[<ore:plateNetherQuartz>, <minecraft:netherbrick>, <ore:plateNetherQuartz>]]);
+	
+// Control Seal - Harvest
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:7>);
+mods.thaumcraft.Infusion.registerRecipe("seal_harvest", "SEALHARVEST", <thaumcraft:seal:7>, 8, 
+	[<aspect:herba> *20, <aspect:victus> *10, <aspect:terra> *10], 
+	<thaumcraft:seal>, 
+	[<minecraft:nether_star>, <minecraft:wheat_seeds>, <thaumcraft:thaumium_hoe>, <ore:plateGold>]);
+	
+// Control Seal - Butcher
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:8>);
+mods.thaumcraft.Infusion.registerRecipe("seal_butcher", "SEALBUTCHER", <thaumcraft:seal:8>, 12, 
+	[<aspect:bestia> *32, <aspect:mortuus> *32, <aspect:victus> *32, <aspect:aversio> *32], 
+	<thaumcraft:seal:7>, 
+	[<minecraft:nether_star>, <ore:craftingToolBlade>, <minecraft:iron_sword>, <thaumcraft:brain>, <minecraft:bow>, <minecraft:arrow>]);
+	
+// Control Seal - Guard
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:9>);
+mods.thaumcraft.Infusion.registerRecipe("seal_guard", "SEALGUARD", <thaumcraft:seal:9>, 8, 
+	[<aspect:bestia> *32, <aspect:mortuus> *32, <aspect:victus> *32, <aspect:aversio> *32], 
+	<thaumcraft:seal>, 
+	[<minecraft:nether_star>, <ore:plateThaumium>, <thaumcraft:thaumium_sword>, <ore:plateGold>]);
+	
+// Control Seal - Guard
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:10>);
+mods.thaumcraft.Infusion.registerRecipe("seal_guard_advanced", "SEALGUARD", <thaumcraft:seal:10>, 12, 
+	[<aspect:instrumentum> *32, <aspect:machina> *24, <aspect:praemunio> *24, <aspect:aversio> *16, <aspect:auram> *8, <aspect:ordo> *8], 
+	<thaumcraft:seal:9>, 
+	[<thaumcraft:elemental_sword>, <thaumcraft:thaumium_helm>, <gregtech:meta_item_1:32724>, <thaumcraft:thaumium_chest>, 
+	<thaumcraft:traveller_boots>, <thaumcraft:thaumium_legs>, <gregtech:meta_item_1:32724>, <thaumcraft:brain>]);
+	
+// Control Seal - Lumberjack
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:11>);
+mods.thaumcraft.Infusion.registerRecipe("seal_lumberjack", "SEALLUMBER", <thaumcraft:seal:11>, 12, 
+	[<aspect:herba> *32, <aspect:instrumentum> *32, <aspect:potentia> *32, <aspect:terra> *20], 
+	<thaumcraft:seal:7>, 
+	[<minecraft:nether_star>, <thaumcraft:thaumium_axe>, <thaumcraft:elemental_axe>, <thaumcraft:brain>, <thaumcraft:thaumium_axe>]);
+	
+// Control Seal - Breaker
+mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:seal:12>);
+mods.thaumcraft.Infusion.registerRecipe("seal_breaker", "SEALBREAK", <thaumcraft:seal:12>, 12, 
+	[<aspect:instrumentum> *32, <aspect:machina> *24, <aspect:perditio> *16, <aspect:praecantatio> *8], 
+	<thaumcraft:seal:7>, 
+	[<thaumcraft:elemental_pick>, <ore:oreCrystalAir>, <thaumcraft:elemental_axe>, <ore:oreCrystalEarth>, <thaumcraft:elemental_shovel>, <ore:oreCrystalFire]);
+	
+// Control Seal - Use
+mods.thaumcraft.Crucible.removeRecipe(<thaumcraft:seal:13>);
+mods.thaumcraft.Infusion.registerRecipe("seal_use", "SEALUSE", <thaumcraft:seal:13>, 12, 
+	[<aspect:humanus> *20, <aspect:instrumentum> *20, <aspect:machina> *20, <aspect:desiderium> *20], 
+	<thaumcraft:seal:5>, 
+	[<minecraft:nether_star>, <minecraft:comparator>, <minecraft:lever>, <minecraft:flint_and_steel>, <minecraft:stone_pressure_plate>, <minecraft:shears>]);
