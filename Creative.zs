@@ -52,3 +52,6 @@ recipes.remove(<storagedrawers:upgrade_creative:1>);
 
 // Creative Activation Crystal
 recipes.remove(<bloodmagic:activation_crystal:2>); 
+
+// Flux Sponge
+recipes.remove(<thaumcraft:creative_flux_sponge>);

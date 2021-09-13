@@ -32,7 +32,7 @@ mods.thaumcraft.Infusion.registerRecipe("mithminite_belt", "TAR_MITHMINITE_BELT"
 mods.thaumcraft.Infusion.removeRecipe("thaumadditions:mithminite_boots");
 mods.thaumcraft.Infusion.registerRecipe("mithminite_boots", "TAR_MITHMINITE_BOOTS", <thaumadditions:mithminite_boots>, 18, 
 	[<aspect:herba> *64, <aspect:fluctus> *64, <aspect:lux> *64, <aspect:motus> *64, <aspect:exitium> *64, <aspect:terra> *64, <aspect:praemunio> *64], 
-	<thaumadditions:mithminite_boots>, [<ore:ingotMithminite>, <thaumcraft:thaumium_boots>, <thaumadditions:vis_seeds>.withTag({Aspect: "terra"}), <thaumcraft:thaumonomicon>, <thaumicwonders:disjunction_cloth>, <ore:gemExquisiteDiamond>, 
+	<thaumadditions:adaminite_boots>, [<ore:ingotMithminite>, <thaumcraft:thaumium_boots>, <thaumadditions:vis_seeds>.withTag({Aspect: "terra"}), <thaumcraft:thaumonomicon>, <thaumicwonders:disjunction_cloth>, <ore:gemExquisiteDiamond>, 
 	<ore:ingotMithminite>, <thaumcraft:lamp_growth>, <thaumadditions:crystal_bore>, <minecraft:lead>, <thaumcraft:causality_collapser>, <thaumadditions:seal_globe>]);
 
 
