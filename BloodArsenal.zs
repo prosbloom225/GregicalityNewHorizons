@@ -88,7 +88,7 @@ mods.thaumcraft.Infusion.registerRecipe("divinity_reagent", "", <bloodarsenal:ba
 	
 // Blood Burned String
 recipes.remove(<bloodarsenal:blood_burned_string>);
-mods.bloodmagic.BloodAltar.addRecipe(<bloodarsenal:blood_burned_string>, <tg:yarn_magic>, 1, 5000, 20, 20);
+mods.bloodmagic.BloodAltar.addRecipe(<bloodarsenal:blood_burned_string>, <thaumicbases:bloodycloth>, 1, 5000, 20, 20);
 
 // TODO - multiple blood orbs
 // Blood Infused Wooden Pickaxe

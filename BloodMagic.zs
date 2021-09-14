@@ -133,7 +133,7 @@ recipes.remove(<bloodmagic:blood_rune:5>);
 mods.thaumcraft.Infusion.registerRecipe("displacement_rune", "", <bloodmagic:blood_rune:5>, 6, 
 	[<aspect:aqua> *32, <aspect:praecantatio> *24, <aspect:motus> *18, <aspect:potentia> *12, <aspect:terra> *8, <aspect:cognitio> *4], 
 	<bloodarsenal:slate:2>, 
-	[pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <ore:oreCrystalWater>, <bloodmagic:slate:2>, pumpEv, <tg:sharped_crystal_water>, <bloodmagic:slate:2>, <tg:sharped_crystal_water>, <bloodmagic:slate:2>]);
+	[pumpEv, <ore:oreCrystalWater>, <bloodmagic:slate:2>, <ore:oreCrystalWater>, <bloodmagic:slate:2>, pumpEv, <ore:oreCrystalWater>, <bloodmagic:slate:2>, <ore:oreCrystalWater>, <bloodmagic:slate:2>]);
 	
 // Rune of Capacity
 recipes.remove(<bloodmagic:blood_rune:6>);
@@ -620,8 +620,8 @@ mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:sigil_holding>, <minecraf
 mods.thaumcraft.Infusion.registerRecipe("sigil_holding", "", <bloodmagic:sigil_holding>, 10, 
 	[<aspect:desiderium> *32, <aspect:cognitio> *24, <aspect:vacuos> *16, <aspect:infernum> *16, <aspect:alkimia> *16, <aspect:praecantatio> *8], 
 	<bloodmagic:slate:2>, 
-	[<tg:pouch_magic_1>, <bloodmagic:slate:1>, <bloodmagic:component:27>, <thaumadditions:dna_sample>.withTag({Entity: {Id: "minecraft:creeper"}}), 
-	<bloodmagic:slate:1>, <bloodmagic:slate:1>, <thaumadditions:dna_sample>.withTag({Entity: {Id: "minecraft:creeper"}}),
+	[<danknull:dank_null_panel_3>, <bloodmagic:slate:1>, <bloodmagic:component:27>, <thaumadditions:dna_sample>, 
+	<bloodmagic:slate:1>, <bloodmagic:slate:1>, <thaumadditions:dna_sample>,
 	<bloodmagic:slate:1>, <bloodmagic:component:27>, <bloodmagic:slate:1>]);
 	
 // Teleposition Sigil
@@ -629,9 +629,9 @@ mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:17>, <bloodmagic
 mods.thaumcraft.Infusion.registerRecipe("sigil_teleposition", "", <bloodmagic:sigil_teleposition>, 10, 
 	[<aspect:desiderium> *32, <aspect:cognitio> *24, <aspect:vacuos> *16, <aspect:infernum> *16, <aspect:alkimia> *16, <aspect:praecantatio> *8], 
 	<bloodmagic:slate:3>, 
-	[<bloodmagic:teleposition_focus>, <bloodmagic:slate:3>, <bloodmagic:component:17>, <tg:teleportator_core>,
+	[<bloodmagic:teleposition_focus>, <bloodmagic:slate:3>, <bloodmagic:component:17>, <thaumicaugmentation:material:3>,
 	<bloodmagic:slate:3>, <bloodmagic:component:17>, <bloodmagic:teleposition_focus>, <bloodmagic:slate:3>, 
-	<tg:teleportator_core>, <bloodmagic:component:17>, <bloodmagic:slate:3>]);	
+	<thaumicaugmentation:material:3>, <bloodmagic:component:17>, <bloodmagic:slate:3>]);	
 	
 // Transposition Sigil
 mods.bloodmagic.AlchemyArray.removeRecipe(<bloodmagic:component:18>, <bloodmagic:slate:3>);

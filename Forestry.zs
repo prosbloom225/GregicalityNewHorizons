@@ -138,6 +138,13 @@ recipes.addShaped(<forestry:pipette>,
 	[null, <gregtech:meta_item_1:32762>, <ore:plateRubber>], 
 	[<ore:boltIron>, null, null]]);
 
+// Woven Silk
+recipes.remove(<forestry:crafting_material:3>);
+recipes.addShaped(<forestry:pipette>, 
+    [[<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>],
+    [<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>],
+    [<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>]]);
+
 // Scented Paneling
 recipes.remove(<forestry:crafting_material:6>);
 assembler.recipeBuilder()

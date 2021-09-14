@@ -334,7 +334,7 @@ assembler.recipeBuilder()
 recipes.remove(<extrautils2:bagofholding>);
 recipes.addShaped(<extrautils2:bagofholding>, 
 	[[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>], 
-	[<thaumcraft:fabric>, <tg:pouch_magic_3>, <thaumcraft:fabric>], 
+	[<thaumcraft:fabric>, <bloodmagic:component:27>, <thaumcraft:fabric>], 
 	[<ore:plateGold>, <ore:plateGold>, <ore:plateGold>]]);
 
 
@@ -613,7 +613,7 @@ recipes.addShaped(<extrautils2:terraformer:6>,
 recipes.remove(<extrautils2:terraformer:7>);
 recipes.addShaped(<extrautils2:terraformer:7>, 
 	[[null, emitterIv, null],
-	[<tg:ench_obs>, <extrautils2:terraformer:9>, <tg:ench_obs>], 
+	[<bloodmagic:component:29>, <extrautils2:terraformer:9>, <bloodmagic:component:29>], 
 	[<ore:circuitExtreme>, machineCasingIv, <ore:circuitExtreme>]]);
 	
 // Magic Infuser
@@ -660,5 +660,5 @@ saw.recipeBuilder()
 recipes.remove(<extrautils2:interactionproxy>);
 recipes.addShaped(<extrautils2:interactionproxy>, 
 	[[<ore:string>, <minecraft:ender_pearl:*>, <ore:string>], 
-	[<minecraft:ender_pearl:*>, <tg:teleportator_core>, <minecraft:ender_pearl:*>], 
+	[<minecraft:ender_pearl:*>, <bloodmagic:component:17>, <minecraft:ender_pearl:*>], 
 	[<ore:string>, <minecraft:ender_pearl:*>, <ore:string>]]);

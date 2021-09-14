@@ -419,9 +419,9 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:fabric>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("fabric", "",  10, 
 	[<aspect:terra> *10, <aspect:aer> *10], 
 	<thaumcraft:fabric>, 
-	[[null, <tg:yarn>, null], 
-	[<tg:yarn>, <ore:wool>, <tg:yarn>], 
-	[null, <tg:yarn>, null]]);
+    [[null, <minecraft:string>, null],
+    [<minecraft:string>, <forestry:crafting_material:3>, <minecraft:string>],
+    [null, <minecraft:string>, null]]);
 	
 // Vis Resonator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
@@ -692,16 +692,16 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:grapple_gun_spool>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("grapple_gun_spool", "GRAPPLEGUN",  25, 
 	[<aspect:aer> *5, <aspect:ignis> *5], 
 	<thaumcraft:grapple_gun_spool>, 
-	[[<tg:yarn>, <minecraft:tripwire_hook>, <tg:yarn>], 
-	[<tg:yarn>, <thaumcraft:mechanism_simple>, <tg:yarn>], 
-	[<tg:yarn>, <tg:yarn>, <tg:yarn>]]);
+	[[<tconstruct:bow_string>.withTag({Material: "slimevine_blue"}), <minecraft:tripwire_hook>, <tconstruct:bow_string>.withTag({Material: "slimevine_blue"})], 
+	[<minecraft:string>, <thaumcraft:mechanism_simple>, <minecraft:string>], 
+    [<bloodarsenal:blood_burned_string>, <bloodarsenal:blood_burned_string>, <bloodarsenal:blood_burned_string>]]);
 
 // Goggles of Revealing
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("goggles", "BASEARTIFICE",  50, 
 	[<aspect:aer> *30, <aspect:terra> *30, <aspect:ignis> *30, <aspect:aqua> *30, <aspect:ordo> *30, <aspect:perditio> *30], 
 	<thaumcraft:goggles>, 
-	[[<tg:fabric_decorated>, <ore:screwGold>, <tg:fabric_decorated>], 
+	[[<thaumcraft:fabric>, <ore:screwGold>, <thaumcraft:fabric>], 
 	[<ore:ringGold>, <ore:craftingToolScrewdriver>, <ore:ringGold>], 
 	[<thaumcraft:thaumometer>, <ore:stickGold>, <thaumcraft:thaumometer>]]);
 		
@@ -772,7 +772,7 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_helm>);
 mods.thaumcraft.Infusion.registerRecipe("fortress_helm", "ARMORFORTRESS", <thaumcraft:fortress_helm>, 8, 
 	[<aspect:metallum> *32, <aspect:praecantatio> *32, <aspect:praemunio> *32, <aspect:victus> *16], 
 	<thaumcraft:thaumium_helm>, 
-	[<ore:gemFlawlessEmerald>, <ore:plateGold>, <ore:plateThaumium>, <ore:plateThaumium>, <tg:yarn_void>, 
+	[<ore:gemFlawlessEmerald>, <ore:plateGold>, <ore:plateThaumium>, <ore:plateThaumium>, <forestry:crafting_material:1>, 
 	 <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateGold>]);
 
 // Thaumium Fortress Cuirass
@@ -780,8 +780,8 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_chest>);
 mods.thaumcraft.Infusion.registerRecipe("fortress_chest", "ARMORFORTRESS", <thaumcraft:fortress_chest>, 8, 
 	[<aspect:praemunio> *40, <aspect:metallum> *32, <aspect:praecantatio> *32, <aspect:cognitio> *16], 
 	<thaumcraft:thaumium_chest>, 
-	[<ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>, <tg:yarn_void>, 
-	 <ore:plateGold>, <tg:yarn_void>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);	
+	[<ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>, <forestry:crafting_material:1>, 
+	 <ore:plateGold>, <forestry:crafting_material:1>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateThaumium>]);	
 
 // Thaumium Fortress Thigh Guards
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:fortress_legs>);
@@ -789,7 +789,7 @@ mods.thaumcraft.Infusion.registerRecipe("fortress_legs", "ARMORFORTRESS", <thaum
 	[<aspect:metallum> *32, <aspect:praecantatio> *32, <aspect:praemunio> *24, <aspect:terra> *16], 
 	<thaumcraft:thaumium_legs>, 
 	[<thaumcraft:baubles:2>, <ore:plateGold>, <ore:plateThaumium>, <ore:plateThaumium>,  
-	 <tg:yarn_void>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateGold>]);	
+	 <forestry:crafting_material:1>, <ore:plateThaumium>, <ore:plateThaumium>, <ore:plateGold>]);	
 
 // Void Helm
 recipes.remove(<thaumcraft:void_helm>);
@@ -832,24 +832,24 @@ mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_helm>);
 mods.thaumcraft.Infusion.registerRecipe("void_robe_helm", "VOIDROBEARMOR", <thaumcraft:void_robe_helm>, 14, 
 	[<aspect:alienis> *24, <aspect:metallum> *24, <aspect:bestia> *24, <aspect:sensus> *24, <aspect:praemunio> *24, <aspect:vacuos> *24, <aspect:praecantatio> *24], 
 	<thaumcraft:void_helm>, 
-	[<thaumcraft:goggles>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>, <tg:fabric_volatile>, <ore:plateThaumium>, 
-	<tg:fabric_volatile>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
+	[<thaumcraft:goggles>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>, <magicbees:resource:10>, <ore:plateThaumium>, 
+	<magicbees:resource:10>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
 	
 // Void Thaumaturges Helm
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_chest>);
 mods.thaumcraft.Infusion.registerRecipe("void_robe_chest", "VOIDROBEARMOR", <thaumcraft:void_robe_chest>, 14, 
 	[<aspect:alienis> *32, <aspect:metallum> *32, <aspect:bestia> *32, <aspect:sensus> *32, <aspect:praemunio> *32, <aspect:vacuos> *32, <aspect:praecantatio> *32], 
 	<thaumcraft:void_chest>, 
-	[<thaumcraft:cloth_chest>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>, <tg:fabric_volatile>, <ore:plateThaumium>, 
-	<tg:fabric_volatile>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
+	[<thaumcraft:cloth_chest>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>,<magicbees:resource:10>, <ore:plateThaumium>, 
+	<magicbees:resource:10>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
 	
 // Void Thaumaturges Leggings
 mods.thaumcraft.Infusion.removeRecipe(<thaumcraft:void_robe_legs>);
 mods.thaumcraft.Infusion.registerRecipe("void_robe_legs", "VOIDROBEARMOR", <thaumcraft:void_robe_legs>, 14, 
 	[<aspect:alienis> *28, <aspect:metallum> *28, <aspect:bestia> *28, <aspect:sensus> *28, <aspect:praemunio> *28, <aspect:vacuos> *28, <aspect:praecantatio> *28], 
 	<thaumcraft:void_legs>, 
-	[<thaumcraft:cloth_legs>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>, <tg:fabric_volatile>, <ore:plateThaumium>, 
-	<tg:fabric_volatile>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
+	[<thaumcraft:cloth_legs>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>, <magicbees:resource:10>, <ore:plateThaumium>, 
+	<magicbees:resource:10>, <thaumcraft:fabric>, <ore:plateVoid>, <thaumcraft:fabric>]);
 	
 // Mundane Amulet
 recipes.remove(<thaumcraft:baubles>);
@@ -874,8 +874,8 @@ recipes.remove(<thaumcraft:baubles:2>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("mundane_belt", "BASEARTIFICE",  30, 
 	[<aspect:ignis> *10, <aspect:ordo> *10, <aspect:terra> *5], 
 	<thaumcraft:baubles:2>, 
-	[[<ore:screwGold>, <tg:fabric_decorated>, <ore:screwGold>], 
-	[<tg:fabric_decorated>, <ore:craftingToolScrewdriver>, <tg:fabric_decorated>], 
+	[[<ore:screwGold>, <magicbees:resource:10>, <ore:screwGold>], 
+	[<minecraft:leather>, <ore:craftingToolScrewdriver>, <minecraft:leather>], 
 	[<ore:screwGold>, <ore:ringBrass>, <ore:screwGold>]]);	
 
 // Fancy Amulet
@@ -901,8 +901,8 @@ recipes.remove(<thaumcraft:baubles:2>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("fancy_belt", "BASEARTIFICE",  30, 
 	[<aspect:ignis> *10, <aspect:ordo> *10, <aspect:terra> *5], 
 	<thaumcraft:baubles:6>, 
-	[[<ore:screwRoseGold>, <tg:fabric_volatile>, <ore:screwRoseGold>], 
-	[<tg:fabric_volatile>, <ore:craftingToolScrewdriver>, <tg:fabric_volatile>], 
+	[[<ore:screwRoseGold>, <magicbees:resource:10>, <ore:screwRoseGold>], 
+	[<minecraft:leather>, <ore:craftingToolScrewdriver>, <minecraft:leather>], 
 	[<ore:screwRoseGold>, <ore:ringTitanium>, <ore:screwRoseGold>]]);	
 	
 // Amulet of Vis
