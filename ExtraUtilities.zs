@@ -97,12 +97,6 @@ recipes.addShaped(<extrautils2:itemdestructionwand>,
 	[<ore:stickSteel>, null, null]]);
 
 
-// Creative Builders Wand
-recipes.addShaped(<extrautils2:itemcreativebuilderswand>, 
-	[[],
-	[],
-	[]]);
-	
 // Magical Wood
 recipes.remove(<extrautils2:decorativesolidwood:1>);
 mods.thaumcraft.Infusion.registerRecipe("magical_wood", "UNLOCKINFUSION", <extrautils2:decorativesolidwood:1>, 6, 

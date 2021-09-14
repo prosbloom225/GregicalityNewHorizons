@@ -1,3 +1,6 @@
+// Creative Builders Wand
+recipes.remove(<extrautils2:itemcreativebuilderswand>);
+
 // Creative Drum
 recipes.remove(<extrautils2:drum:4>);
 
