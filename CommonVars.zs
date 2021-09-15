@@ -53,3 +53,108 @@ global thermal_sep      as RecipeMap = RecipeMap.getByName("thermal_centrifuge")
 global tower            as RecipeMap = RecipeMap.getByName("distillation_tower");
 global wiremill         as RecipeMap = RecipeMap.getByName("wiremill");
 
+<ore:gregToolWrench>.addItems([
+	<gregtech:meta_tool:8>.withEmptyTag(), 
+	<gregtech:meta_tool:29>.withEmptyTag(), 
+	<gregtech:meta_tool:30>.withEmptyTag(), 
+	<gregtech:meta_tool:31>.withEmptyTag()
+]);
+
+<ore:gregToolSaw>.addItems([
+	<gregtech:meta_tool:5>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag(), 
+	<gregtech:meta_tool:26>.withEmptyTag(), 
+	<gregtech:meta_tool:27>.withEmptyTag(), 
+	<gregtech:meta_tool:28>.withEmptyTag(), 
+	<gregtech:meta_tool:33>.withEmptyTag(),
+]);
+
+<ore:gregToolHoe>.addItems([
+	<gregtech:meta_tool:4>.withEmptyTag()
+]);
+
+<ore:gregToolAxe>.addItems([
+	<gregtech:meta_tool:3>.withEmptyTag()
+]);
+
+<ore:gregToolFile>.addItems([
+	<gregtech:meta_tool:9>.withEmptyTag()
+]);
+
+<ore:gregToolSword>.addItems([
+	<gregtech:meta_tool:0>.withEmptyTag()
+]);
+
+<ore:gregToolScoop>.addItems([
+	<gregtech:meta_tool:14>.withEmptyTag()
+]);
+
+<ore:gregToolKnife>.addItems([
+	<gregtech:meta_tool:17>.withEmptyTag()
+]);
+
+<ore:gregToolBlade>.addItems([
+	<gregtech:meta_tool:16>.withEmptyTag(),
+	<gregtech:meta_tool:17>.withEmptyTag(),
+	<gregtech:meta_tool:18>.withEmptyTag(),
+	<gregtech:meta_tool:19>.withEmptyTag()
+]);
+
+<ore:gregToolMortar>.addItems([
+	<gregtech:meta_tool:12>.withEmptyTag()
+]);
+
+<ore:gregToolShovel>.addItems([
+	<gregtech:meta_tool:2>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag(),
+]);
+
+<ore:gregToolPlunger>.addItems([
+	<gregtech:meta_tool:37>.withEmptyTag()
+]);
+
+<ore:gregToolCrowbar>.addItems([
+	<gregtech:meta_tool:10>.withEmptyTag(),
+	<gregtech:meta_tool:16>.withEmptyTag()
+]);
+
+<ore:gregToolPickaxe>.addItems([
+	<gregtech:meta_tool:1>.withEmptyTag()
+]);
+
+<ore:gregToolBranchCutter>.addItems([
+	<gregtech:meta_tool:15>.withEmptyTag()
+]);
+
+<ore:gregToolWireCutter>.addItems([
+	<gregtech:meta_tool:13>.withEmptyTag()
+]);
+
+<ore:gregToolHardHammer>.addItems([
+	<gregtech:meta_tool:6>.withEmptyTag()
+]);
+
+<ore:gregToolSoftHammer>.addItems([
+	<gregtech:meta_tool:7>.withEmptyTag()
+]);
+
+<ore:gregToolJackHammer>.addItems([
+	<gregtech:meta_tool:32>.withEmptyTag()
+]);
+
+<ore:gregToolScrewdriver>.addItems([
+	<gregtech:meta_tool:11>.withEmptyTag(),
+	<gregtech:meta_tool:34>.withEmptyTag()
+]);
+
+<ore:gregToolMiningDrill>.addItems([
+	<gregtech:meta_tool:23>.withEmptyTag(),
+	<gregtech:meta_tool:24>.withEmptyTag(),
+	<gregtech:meta_tool:25>.withEmptyTag()
+]);
+
+<ore:gregToolJackHammer>.addItems([
+	<gregtech:meta_tool:32>.withEmptyTag()
+]);
+
+
