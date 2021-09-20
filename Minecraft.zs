@@ -222,15 +222,15 @@ saw.recipeBuilder()
 recipes.remove(<minecraft:ladder>);
 recipes.addShaped(<minecraft:ladder>, 
     [[<ore:stickWood>, <ore:gregToolScrewdriver>, <ore:stickWood>],
-    [<minecraft:string>, <ore:screwIron>, <minecraft:string>],
+    [<ore:stickWood>, <ore:screwIron>, <ore:stickWood>],
     [<ore:stickWood>, <ore:gregToolSoftHammer>, <ore:stickWood>]]);
 recipes.addShaped(<minecraft:ladder> *2, 
     [[<ore:stickWood>, <ore:gregToolScrewdriver>, <ore:stickWood>],
-    [<minecraft:string>, <ore:screwIron>, <minecraft:string>],
+    [<ore:stickWood>, <ore:screwIron>, <ore:stickWood>],
     [<ore:stickWood>, <ore:gregToolSoftHammer>, <ore:stickWood>]]);
 recipes.addShaped(<minecraft:ladder> *4, 
     [[<ore:stickWood>, <ore:gregToolScrewdriver>, <ore:stickWood>],
-    [<minecraft:string>, <ore:screwSteel>, <minecraft:string>],
+    [<ore:stickWood>, <ore:screwSteel>, <ore:stickWood>],
     [<ore:stickWood>, <ore:gregToolSoftHammer>, <ore:stickWood>]]);
 assembler.recipeBuilder()
 	.inputs(<ore:stickWood> *2, <ore:screwIron>)

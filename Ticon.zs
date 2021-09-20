@@ -14,7 +14,7 @@ mods.jei.JEI.removeAndHide(<tconstruct:slime_boots:3>);
 // Wooden Hopper
 recipes.remove(<tconstruct:wooden_hopper>);
 recipes.addShaped(<tconstruct:wooden_hopper>, 
-	[[<ore:plankWood>, <ore:craftingToolWrench>, <ore:plankWood>], 
+	[[<ore:plankWood>, <ore:gregToolWrench>, <ore:plankWood>], 
 	[<ore:plankWood>, <ore:chestWood>, <ore:plankWood>], 
 	[null, <ore:plankWood>, null]]);
 
@@ -82,57 +82,69 @@ mods.thaumcraft.Infusion.registerRecipe("ball_of_moss", "", <tconstruct:material
 	[<aspect:instrumentum> *35 , <aspect:alkimia> *30, <aspect:terra> *25], 
 	<ore:gemFlawlessDiamond>, 
 		[<ore:crystalEarth>, <forestry:bee_combs:15>, <ore:crystalEarth>, <forestry:bee_combs:15>, <ore:crystalEarth>, <forestry:bee_combs:15>]);
+
+// Stone Ladder
+recipes.remove(<tconstruct:stone_ladder>);
+recipes.addShaped(<tconstruct:stone_ladder>,
+    [[<ore:rodStone>, <ore:gregToolScrewdriver>, <ore:rodStone>],
+    [<ore:rodStone>,<ore:screwIron>, <ore:rodStone>],
+    [<ore:rodStone>, <ore:gregToolSoftHammer>, <ore:rodStone>]]);
+
+// Stone Rod
+recipes.remove(<tconstruct:stone_stick>);
+recipes.addShapeless(<tconstruct:stone_stick>,
+    [<ore:stoneCobble>, <ore:gregToolFile>]);
 		
 // Slimesling (Green)
 recipes.remove(<tconstruct:slimesling>);
 recipes.addShaped(<tconstruct:slimesling>, 
 	[[<ore:screwIron>, <tconstruct:slime_congealed>, <ore:screwIron>], 
 	[<ore:slimeballGreen>, pistonLv, <ore:slimeballGreen>], 
-	[<ore:craftingToolScrewdriver>, <ore:craftingToolHardHammer>, null]]);
+	[<ore:gregToolScrewdriver>, <ore:gregToolHardHammer>, null]]);
 	
 // Slimesling (Blue)
 recipes.remove(<tconstruct:slimesling:1>);
 recipes.addShaped(<tconstruct:slimesling:1>, 
 	[[<ore:screwIron>, <tconstruct:slime_congealed:1>, <ore:screwIron>], 
 	[<ore:slimeballBlue>, pistonLv, <ore:slimeballBlue>], 
-	[<ore:craftingToolScrewdriver>, <ore:craftingToolHardHammer>, null]]);
+	[<ore:gregToolScrewdriver>, <ore:gregToolHardHammer>, null]]);
 
 // Slimesling (Purple)
 recipes.remove(<tconstruct:slimesling:2>);
 recipes.addShaped(<tconstruct:slimesling:2>, 
 	[[<ore:screwIron>, <tconstruct:slime_congealed:2>, <ore:screwIron>], 
 	[<ore:slimeballPurple>, pistonLv, <ore:slimeballPurple>], 
-	[<ore:craftingToolScrewdriver>, <ore:craftingToolHardHammer>, null]]);
+	[<ore:gregToolScrewdriver>, <ore:gregToolHardHammer>, null]]);
 
 // Slimesling (Magma)
 recipes.remove(<tconstruct:slimesling:4>);
 recipes.addShaped(<tconstruct:slimesling:4>, 
 	[[<ore:screwIron>, <tconstruct:slime_congealed:4>, <ore:screwIron>], 
 	[<ore:slimeballMagma>, pistonLv, <ore:slimeballMagma>], 
-	[<ore:craftingToolScrewdriver>, <ore:craftingToolHardHammer>, null]]);
+	[<ore:gregToolScrewdriver>, <ore:gregToolHardHammer>, null]]);
 
 // Slime Boots (Green)
 recipes.remove(<tconstruct:slime_boots>);
 recipes.addShaped(<tconstruct:slime_boots>, 
-	[[<ore:slimeballGreen>, <ore:craftingToolHardHammer>, <ore:slimeballGreen>], 
+	[[<ore:slimeballGreen>, <ore:gregToolHardHammer>, <ore:slimeballGreen>], 
 	[<tconstruct:slime_congealed>, pistonLv, <tconstruct:slime_congealed>]]);
 	
 // Slime Boots (Blue)
 recipes.remove(<tconstruct:slime_boots:1>);
 recipes.addShaped(<tconstruct:slime_boots:1>, 
-	[[<ore:slimeballBlue>, <ore:craftingToolHardHammer>, <ore:slimeballBlue>], 
+	[[<ore:slimeballBlue>, <ore:gregToolHardHammer>, <ore:slimeballBlue>], 
 	[<tconstruct:slime_congealed:1>, pistonLv, <tconstruct:slime_congealed:1>]]);
 	
 // Slime Boots (Purple)
 recipes.remove(<tconstruct:slime_boots:2>);
 recipes.addShaped(<tconstruct:slime_boots:2>, 
-	[[<ore:slimeballPurple>, <ore:craftingToolHardHammer>, <ore:slimeballPurple>], 
+	[[<ore:slimeballPurple>, <ore:gregToolHardHammer>, <ore:slimeballPurple>], 
 	[<tconstruct:slime_congealed:2>, pistonLv, <tconstruct:slime_congealed:2>]]);
 	
 // Slime Boots (Magma)
 recipes.remove(<tconstruct:slime_boots:4>);
 recipes.addShaped(<tconstruct:slime_boots:4>, 
-	[[<ore:slimeballMagma>, <ore:craftingToolHardHammer>, <ore:slimeballMagma>], 
+	[[<ore:slimeballMagma>, <ore:gregToolHardHammer>, <ore:slimeballMagma>], 
 	[<tconstruct:slime_congealed:4>, pistonLv, <tconstruct:slime_congealed:4>]]);
 
 // Piggybackpack

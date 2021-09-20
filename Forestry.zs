@@ -83,7 +83,7 @@ mods.jei.JEI.removeAndHide(<forestry:bottler>);
 // Minecart with Bee House
 recipes.remove(<forestry:cart.beehouse>);
 recipes.addShaped(<forestry:cart.beehouse>,
-	[[null, <ore:craftingToolScrewdriver>, null],
+	[[null, <ore:gregToolScrewdriver>, null],
 	[<ore:screwSteel>, <forestry:bee_house>, <ore:screwSteel>],
 	[<ore:screwSteel>, <minecraft:minecart>, <ore:screwSteel>]]);
 assembler.recipeBuilder()
@@ -94,7 +94,7 @@ assembler.recipeBuilder()
 // Minecart with Apiary
 recipes.remove(<forestry:cart.beehouse:1>);
 recipes.addShaped(<forestry:cart.beehouse:1>,
-	[[null, <ore:craftingToolScrewdriver>, null],
+	[[null, <ore:gregToolScrewdriver>, null],
 	[<ore:screwSteel>, <forestry:apiary>, <ore:screwSteel>],
 	[<ore:screwSteel>, <minecraft:minecart>, <ore:screwSteel>]]);
 assembler.recipeBuilder()
@@ -283,7 +283,7 @@ recipes.addShapeless(<forestry:habitat_screen>,
 recipes.remove(<forestry:worktable>);
 recipes.addShaped(<forestry:worktable>, 
 	[[<ore:screwIron>, <minecraft:bookshelf>, <ore:screwIron>], 
-	[<ore:craftingToolSaw>, <minecraft:crafting_table>, <ore:craftingToolScrewdriver>], 
+	[<ore:gregToolSaw>, <minecraft:crafting_table>, <ore:gregToolScrewdriver>], 
 	[<ore:screwIron>, <minecraft:chest>, <ore:screwIron>]]);
 	
 // Peat-Fired Engine
@@ -801,8 +801,8 @@ recipes.addShaped(<forestry:raintank>,
 recipes.remove(<forestry:grafter>);
 recipes.addShaped(<forestry:grafter>, 
 	[[null, <ore:stickWood>, null], 
-	[<ore:craftingToolFile>, <ore:stickWood>, null], 
-	[<ore:plateBronze>, <ore:ingotBronze>, <ore:craftingToolHardHammer>]]);
+	[<ore:gregToolFile>, <ore:stickWood>, null], 
+	[<ore:plateBronze>, <ore:ingotBronze>, <ore:gregToolHardHammer>]]);
 	
 // Habitat Locator
 recipes.remove(<forestry:habitat_locator>);
@@ -841,7 +841,7 @@ recipes.remove(<forestry:bee_house>);
 recipes.addShaped(<forestry:bee_house>,
 	[[<ore:screwSteel>, <ore:slabWood>, <ore:screwSteel>],
 	[<forestry:frame_untreated>, machineCasingLv,<forestry:frame_untreated>],
-	[<minecraft:fence>, <ore:slabWood>, <minecraft:fence>]]);
+	[<ore:fenceWood>, <ore:slabWood>, <ore:fenceWood>]]);
 	
 // Alveary
 recipes.remove(<forestry:alveary.plain>);

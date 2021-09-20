@@ -78,7 +78,7 @@ mods.jei.JEI.removeAndHide(<extrautils2:ingredients:13>);
 recipes.remove(<extrautils2:wateringcan:1000>);
 recipes.remove(<extrautils2:wateringcan>);
 recipes.addShaped(<extrautils2:wateringcan>, 
-	[[<ore:craftingToolHardHammer>, <ore:ringSteel>, <ore:craftingToolScrewdriver>],
+	[[<ore:gregToolHardHammer>, <ore:ringSteel>, <ore:gregToolScrewdriver>],
 	[<ore:plateIron>, <ore:plateIron>, <ore:stickIron>],
 	[<ore:plateIron>, <ore:plateIron>, <ore:screwSteel>]]);
 
@@ -108,7 +108,7 @@ mods.thaumcraft.Infusion.registerRecipe("magical_wood", "UNLOCKINFUSION", <extra
 // Trash Can
 recipes.remove(<extrautils2:trashcan>);
 recipes.addShaped(<extrautils2:trashcan>, 
-	[[<ore:plateIron>, <ore:craftingToolHardHammer>, <ore:plateIron>],
+	[[<ore:plateIron>, <ore:gregToolHardHammer>, <ore:plateIron>],
 	[<ore:plateIron>, <ore:gemEnderPearl>, <ore:plateIron>],
 	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]]);
 	
@@ -226,9 +226,9 @@ recipes.remove(<extrautils2:compressednetherrack:5>);
 // Glass Cutter
 recipes.remove(<extrautils2:glasscutter>);
 recipes.addShaped(<extrautils2:glasscutter>, 
-	[[<ore:craftingToolHardHammer>, <ore:screwIron>, <ore:plateIron>], 
+	[[<ore:gregToolHardHammer>, <ore:screwIron>, <ore:plateIron>], 
 	[null, <ore:stickWood>, <ore:plateIron>], 
-	[<ore:ingotIron>, <ore:screwIron>, <ore:craftingToolScrewdriver>]]);
+	[<ore:ingotIron>, <ore:screwIron>, <ore:gregToolScrewdriver>]]);
 
 // Sun Crystal
 recipes.remove(<extrautils2:suncrystal:250>);
@@ -264,7 +264,7 @@ recipes.addShaped(<extrautils2:ingredients:6>,
 recipes.remove(<extrautils2:ingredients:7>);
 recipes.addShaped(<extrautils2:ingredients:7>, 
 [[<ore:plateRedAlloy>, <extrautils2:ingredients:6>, <ore:plateRedAlloy>],
-[<ore:craftingToolWrench>, <ore:gearDiamond>, pistonMv],
+[<ore:gregToolWrench>, <ore:gearDiamond>, pistonMv],
 [<ore:plateRedAlloy>, <extrautils2:ingredients:6>, <ore:plateRedAlloy>]]);
 
 // Mining Upgrade
@@ -364,12 +364,12 @@ assembler.recipeBuilder()
 recipes.remove(<extrautils2:pipe>);
 recipes.addShaped(<extrautils2:pipe>, 
 	[[<ore:foilSteel>, <ore:plateSteel>, <ore:foilSteel>], 
-	[<ore:craftingToolWrench>, <ore:stickRedAlloy>, <ore:craftingToolHardHammer>], 
+	[<ore:gregToolWrench>, <ore:stickRedAlloy>, <ore:gregToolHardHammer>], 
 	[<ore:foilSteel>, <ore:plateSteel>, <ore:foilSteel>]]);
 
 // Wrench
 recipes.remove(<extrautils2:wrench>);
-recipes.addShapeless(<extrautils2:wrench>, [<ore:craftingToolWrench>, <ore:dustRedstone>, <ore:ingotIron>]);
+recipes.addShapeless(<extrautils2:wrench>, [<ore:gregToolWrench>, <ore:dustRedstone>, <ore:ingotIron>]);
 
 // Item Filter
 recipes.remove(<extrautils2:filter>);
@@ -390,7 +390,7 @@ recipes.addShapeless(<extrautils2:filterfluids>, [<extrautils2:filterfluids>]);
 // Item Transfer Node
 recipes.remove(<extrautils2:grocket>);
 recipes.addShaped(<extrautils2:grocket>, 
-	[[<ore:craftingToolWrench>, <ore:gearSteel>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolWrench>, <ore:gearSteel>, <ore:gregToolHardHammer>], 
 	[<ore:screwEnderium>, conveyorLv, <ore:screwEnderium>], 
 	[<ore:gearSteel>, pumpLv, <ore:gearSteel>]]);
 	
@@ -402,7 +402,7 @@ recipes.addShapeless(<extrautils2:grocket:1>,
 // Fluid Transfer Node
 recipes.remove(<extrautils2:grocket:2>);
 recipes.addShaped(<extrautils2:grocket:2>, 
-	[[<ore:craftingToolWrench>, <ore:pipeMediumSteel>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolWrench>, <ore:pipeMediumSteel>, <ore:gregToolHardHammer>], 
 	[<ore:screwEnderium>, pumpLv, <ore:screwEnderium>], 
 	[<ore:pipeMediumSteel>, <ore:gearSteel>, <ore:pipeMediumSteel>]]);
 	
@@ -416,14 +416,14 @@ recipes.addShaped(<extrautils2:grocket:6>,
 // Item Retrieval Node
 recipes.remove(<extrautils2:grocket:3>);
 recipes.addShaped(<extrautils2:grocket:3>, 
-	[[<ore:craftingToolWrench>, <ore:gearSteel>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolWrench>, <ore:gearSteel>, <ore:gregToolHardHammer>], 
 	[<ore:screwEnderium>, conveyorLv, <ore:screwEnderium>], 
 	[<extrautils2:grocket>, <extrautils2:grocket>, <extrautils2:grocket>]]);
 	
 // Fluid Retrieval Node
 recipes.remove(<extrautils2:grocket:4>);
 recipes.addShaped(<extrautils2:grocket:4>, 
-	[[<ore:craftingToolWrench>, <ore:pipeMediumSteel>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolWrench>, <ore:pipeMediumSteel>, <ore:gregToolHardHammer>], 
 	[<ore:screwEnderium>, pumpLv, <ore:screwEnderium>], 
 	[<extrautils2:grocket:2>, <extrautils2:grocket:2>, <extrautils2:grocket:2>]]);
 	
@@ -508,28 +508,28 @@ recipes.addShaped(<extrautils2:quarry>,
 // Wooden Spikes
 recipes.remove(<extrautils2:spike_wood>);
 recipes.addShaped(<extrautils2:spike_wood>, 
-	[[<ore:craftingToolSaw>, <minecraft:wooden_sword>, <ore:craftingToolScrewdriver>],
+	[[<ore:gregToolSaw>, <minecraft:wooden_sword>, <ore:gregToolScrewdriver>],
 	[<ore:screwIron>, <ore:plateWood>, <ore:screwIron>],
 	[<ore:plateWood>, <ore:logWood>, <ore:plateWood>]]);
 	
 // Iron Spikes
 recipes.remove(<extrautils2:spike_iron>);
 recipes.addShaped(<extrautils2:spike_iron>, 
-	[[<ore:craftingToolSaw>, <minecraft:iron_sword>, <ore:craftingToolScrewdriver>],
+	[[<ore:gregToolSaw>, <minecraft:iron_sword>, <ore:gregToolScrewdriver>],
 	[<ore:screwIron>, <ore:plateIron>, <ore:screwIron>],
 	[<ore:plateIron>, <ore:blockIron>, <ore:plateIron>]]);
 	
 // Gold Spikes
 recipes.remove(<extrautils2:spike_gold>);
 recipes.addShaped(<extrautils2:spike_gold>, 
-	[[<ore:craftingToolSaw>, <minecraft:golden_sword>, <ore:craftingToolScrewdriver>],
+	[[<ore:gregToolSaw>, <minecraft:golden_sword>, <ore:gregToolScrewdriver>],
 	[<ore:screwGold>, <ore:plateGold>, <ore:screwGold>],
 	[<ore:plateGold>, <ore:blockGold>, <ore:plateGold>]]);
 
 // Diamond Spikes
 recipes.remove(<extrautils2:spike_diamond>);
 recipes.addShaped(<extrautils2:spike_diamond>, 
-	[[<ore:craftingToolSaw>, <minecraft:diamond_sword>, <ore:craftingToolScrewdriver>],
+	[[<ore:gregToolSaw>, <minecraft:diamond_sword>, <ore:gregToolScrewdriver>],
 	[<ore:screwAluminium>, <ore:plateDiamond>, <ore:screwAluminium>],
 	[<ore:plateDiamond>, <ore:blockDiamond>, <ore:plateDiamond>]]);
 
@@ -537,7 +537,7 @@ recipes.addShaped(<extrautils2:spike_diamond>,
 recipes.remove(<extrautils2:largishchest>);
 recipes.addShaped(<extrautils2:largishchest>, 
 	[[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
-	[<ore:screwIron>, <ore:chest>, <ore:craftingToolScrewdriver>],
+	[<ore:screwIron>, <ore:chest>, <ore:gregToolScrewdriver>],
 	[<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]]);
 
 // Mini Chest	
@@ -550,7 +550,7 @@ saw.recipeBuilder()
 // Trowel
 recipes.remove(<extrautils2:trowel>);
 recipes.addShaped(<extrautils2:trowel>, 
-	[[null, <ore:craftingToolScrewdriver>, <ore:ingotIron>], 
+	[[null, <ore:gregToolScrewdriver>, <ore:ingotIron>], 
 	[null, <minecraft:stone_button:*>, <ore:screwIron>], 
 	[<ore:stickWood>, null, null]]);
 

@@ -146,15 +146,31 @@ assembler.recipeBuilder()
 	.inputs([<ore:stickAluminium> *4, <ore:circuitBasic> *4, <gregtech:meta_item_2:32457>])
 	.outputs(<integrateddynamics:variable_transformer>)
 	.duration(200).EUt(16).buildAndRegister();
+recipes.addShaped(<integrateddynamics:variable_transformer>, 
+	[[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>], 
+	[<ore:circuitBasic>, <gregtech:meta_item_2:32451>, <ore:circuitBasic>], 
+	[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>]]);
+assembler.recipeBuilder()
+	.inputs([<ore:stickAluminium> *4, <ore:circuitBasic> *4, <gregtech:meta_item_2:32451>])
+	.outputs(<integrateddynamics:variable_transformer>)
+	.duration(200).EUt(16).buildAndRegister();
 	
 // Input Variable Transformer
 recipes.remove(<integrateddynamics:variable_transformer:1>);
 recipes.addShaped(<integrateddynamics:variable_transformer:1>, 
 	[[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>], 
-	[<ore:circuitBasic>, <gregtech:meta_item_2:32458>, <ore:circuitBasic>], 
+	[<ore:circuitBasic>, <gregtech:meta_item_2:32459>, <ore:circuitBasic>], 
 	[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>]]);
 assembler.recipeBuilder()
-	.inputs([<ore:stickAluminium> *4, <ore:circuitBasic> *4, <gregtech:meta_item_2:32458>])
+	.inputs([<ore:stickAluminium> *4, <ore:circuitBasic> *4, <gregtech:meta_item_2:32459>])
+	.outputs(<integrateddynamics:variable_transformer:1>)
+	.duration(200).EUt(16).buildAndRegister();
+recipes.addShaped(<integrateddynamics:variable_transformer:1>, 
+	[[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>], 
+	[<ore:circuitBasic>, <gregtech:meta_item_2:32455>, <ore:circuitBasic>], 
+	[<ore:stickAluminium>, <ore:circuitBasic>, <ore:stickAluminium>]]);
+assembler.recipeBuilder()
+	.inputs([<ore:stickAluminium> *4, <ore:circuitBasic> *4, <gregtech:meta_item_2:32455>])
 	.outputs(<integrateddynamics:variable_transformer:1>)
 	.duration(200).EUt(16).buildAndRegister();
 	
