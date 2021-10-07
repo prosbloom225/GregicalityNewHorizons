@@ -223,7 +223,7 @@ circuit_assembler.recipeBuilder()
 // Soldering Iron
 recipes.remove(<forestry:soldering_iron>);
 circuit_assembler.recipeBuilder()
-	.inputs([<gregtech:meta_item_2:32573>, <ore:stickSteel> *2, <ore:boltSteel>])
+	.inputs([<gregtech:meta_item_1:32518>, <ore:stickSteel> *2, <ore:boltSteel>])
 	.outputs(<forestry:soldering_iron>)
 	.fluidInputs([<liquid:redstone> *576])
 	.duration(3000).EUt(30).buildAndRegister();

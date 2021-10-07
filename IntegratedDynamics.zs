@@ -221,10 +221,10 @@ assembler.recipeBuilder()
 recipes.remove(<integratedtunnels:part_exporter_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_exporter_world_item_item>, 
 	[[<ore:craftingToolScrewdriver>, <minecraft:hopper>, <ore:craftingToolHardHammer>], 
-	[<ore:screwAluminium>, <integrateddynamics:variable_transformer:1>, <ore:screwAluminium>], 
+	[<ore:screwAluminium>, <integratedtunnels:part_importer_item_item>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
-	.inputs([<ore:plateAluminium> *3, <integrateddynamics:variable_transformer:1>, <minecraft:hopper>])
+	.inputs([<ore:plateAluminium> *3, <integratedtunnels:part_importer_item_item>, <minecraft:hopper>])
 	.outputs(<integratedtunnels:part_exporter_world_item_item>)
 	.duration(600).EUt(64).buildAndRegister();
 	
@@ -232,10 +232,10 @@ assembler.recipeBuilder()
 recipes.remove(<integratedtunnels:part_importer_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_importer_world_item_item>, 
 	[[<ore:craftingToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:craftingToolHardHammer>], 
-	[<ore:screwAluminium>, <integrateddynamics:variable_transformer>, <ore:screwAluminium>], 
+	[<ore:screwAluminium>, <integratedtunnels:part_importer_item_item>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
-	.inputs([<ore:plateAluminium> *3,  <integrateddynamics:variable_transformer>, <minecraft:diamond_pickaxe>])
+	.inputs([<ore:plateAluminium> *3,  <integratedtunnels:part_importer_item_item>, <minecraft:diamond_pickaxe>])
 	.outputs(<integratedtunnels:part_importer_world_item_item>)
 	.duration(600).EUt(64).buildAndRegister();
 
@@ -263,14 +263,14 @@ assembler.recipeBuilder()
 // World Fluid Importer
 recipes.remove(<integratedtunnels:part_importer_world_fluid_item>);
 assembler.recipeBuilder()
-	.inputs([<integratedtunnels:part_importer_item_item>, <ore:plateLapis> *3])
+	.inputs([<integratedtunnels:part_importer_fluid_item>, <minecraft:bucket>])
 	.outputs(<integratedtunnels:part_importer_world_fluid_item>)
 	.duration(300).EUt(120).buildAndRegister();
 	
 // World Fluid Exporter
 recipes.remove(<integratedtunnels:part_exporter_world_fluid_item>);
 assembler.recipeBuilder()
-	.inputs([<integratedtunnels:part_exporter_item_item>, <ore:plateLapis> *3])
+	.inputs([<integratedtunnels:part_exporter_item_item>, <minecraft:bucket>])
 	.outputs(<integratedtunnels:part_exporter_world_fluid_item>)
 	.duration(300).EUt(120).buildAndRegister();
 	
