@@ -118,7 +118,7 @@ alloy.recipeBuilder()
 // Wrench
 recipes.remove(<integrateddynamics:wrench>);
 recipes.addShaped(<integrateddynamics:wrench>, 
-	[[<integrateddynamics:crystalized_menril_chunk>, <ore:craftingToolHardHammer>, <integrateddynamics:crystalized_menril_chunk>],
+	[[<integrateddynamics:crystalized_menril_chunk>, <ore:gregToolHardHammer>, <integrateddynamics:crystalized_menril_chunk>],
 	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
 	[null, <integrateddynamics:crystalized_menril_chunk>, null]]);
 
@@ -132,7 +132,7 @@ recipes.addShaped(<integrateddynamics:variable>,
 // Labeller
 recipes.remove(<integrateddynamics:labeller>);
 recipes.addShaped(<integrateddynamics:labeller>, 
-	[[null, <integrateddynamics:crystalized_menril_chunk>,  <ore:craftingToolHardHammer>],
+	[[null, <integrateddynamics:crystalized_menril_chunk>,  <ore:gregToolHardHammer>],
 	[null, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
 	[<integrateddynamics:crystalized_menril_chunk>, null, null]]);
 	
@@ -198,7 +198,7 @@ recipes.addShaped(<integratedtunnels:part_interface_item_item>,
 // Item Importer
 recipes.remove(<integratedtunnels:part_importer_item_item>);
 recipes.addShaped(<integratedtunnels:part_importer_item_item>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateAluminium>, <ore:craftingToolWrench>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateAluminium>, <ore:gregToolWrench>], 
 	[<ore:screwAluminium>, <integrateddynamics:variable_transformer:1>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, pistonLv, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
@@ -209,7 +209,7 @@ assembler.recipeBuilder()
 // Item Exporter
 recipes.remove(<integratedtunnels:part_exporter_item_item>);
 recipes.addShaped(<integratedtunnels:part_exporter_item_item>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateAluminium>, <ore:craftingToolWrench>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateAluminium>, <ore:gregToolWrench>], 
 	[<ore:screwAluminium>, <integrateddynamics:variable_transformer:1>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, pistonLv, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
@@ -220,7 +220,7 @@ assembler.recipeBuilder()
 // World Item Exporter
 recipes.remove(<integratedtunnels:part_exporter_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_exporter_world_item_item>, 
-	[[<ore:craftingToolScrewdriver>, <minecraft:hopper>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <minecraft:hopper>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, <integratedtunnels:part_importer_item_item>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
@@ -231,7 +231,7 @@ assembler.recipeBuilder()
 // World Item Importer
 recipes.remove(<integratedtunnels:part_importer_world_item_item>);
 recipes.addShaped(<integratedtunnels:part_importer_world_item_item>, 
-	[[<ore:craftingToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, <integratedtunnels:part_importer_item_item>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
@@ -292,5 +292,5 @@ assembler.recipeBuilder()
 recipes.remove(<integratedtunnels:part_player_simulator_item>);
 recipes.addShaped(<integratedtunnels:part_player_simulator_item>,
 	[[<ore:plateAluminium>, <integratedtunnels:part_exporter_world_block_item>, <ore:plateAluminium>],
-	[<ore:craftingToolWrench>, <thaumcraft:golem>.withTag({props: 0 as long}), <ore:craftingToolHardHammer>],
+	[<ore:gregToolWrench>, <thaumcraft:golem>.withTag({props: 0 as long}), <ore:gregToolHardHammer>],
 	[<ore:plateAluminium>, <integratedtunnels:part_importer_world_block_item>, <ore:plateAluminium>]]);
