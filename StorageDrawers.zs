@@ -35,14 +35,14 @@ recipes.remove(<storagedrawers:framingtable>);
 recipes.addShaped(<storagedrawers:framingtable>,
 	[[<ore:drawerBasic>, <ore:drawerBasic>, <ore:drawerBasic>],
 	[<ore:fenceWood>, <ore:stickWood>, <ore:fenceWood>],
-	[<ore:fenceWood>, <ore:craftingToolScrewdriver>, <ore:fenceWood>]]);
+	[<ore:fenceWood>, <ore:gregToolScrewdriver>, <ore:fenceWood>]]);
 	
 // Upgrade Template
 recipes.remove(<storagedrawers:upgrade_template>);
 recipes.addShaped(<storagedrawers:upgrade_template>,
 	[[<ore:screwSteel>, <ore:craftingPiston>, <ore:screwSteel>],
 	[<ore:screwSteel>, <ore:drawerBasic>, <ore:screwSteel>],
-	[null, <ore:craftingToolScrewdriver>, null]]);
+	[null, <ore:gregToolScrewdriver>, null]]);
 assembler.recipeBuilder()
 	.inputs([<ore:drawerBasic>, <ore:craftingPiston>])
 	.outputs(<storagedrawers:upgrade_template>)
@@ -87,7 +87,7 @@ recipes.addShaped(<storagedrawers:upgrade_storage:4>,
 recipes.remove(<storagedrawers:upgrade_void>);
 recipes.addShaped(<storagedrawers:upgrade_void>, 
 	[[<ore:stickWood>, <ore:wireGtSingleRedAlloy>, <ore:stickWood>],
-	[<ore:plateVoid>, <storagedrawers:upgrade_template>, <ore:plateVoid>],
+	[<ore:plateRubber>, <storagedrawers:upgrade_template>, <ore:plateRubber>],
 	[<ore:stickWood>, <ore:wireGtSingleRedAlloy>, <ore:stickWood>]]);
 	
 // Redstone Upgrade
@@ -102,7 +102,7 @@ recipes.remove(<storagedrawers:drawer_key>);
 recipes.addShaped(<storagedrawers:drawer_key>,
 	[[null, <ore:boltGold>, <ore:plateSteel>],
 	[<storagedrawers:upgrade_template>, <ore:plateSteel>, <ore:stickGold>],
-	[<ore:plateGold>, <ore:craftingToolSaw>, null]]);
+	[<ore:plateGold>, <ore:gregToolSaw>, null]]);
 	
 // Concealment Key
 recipes.remove(<storagedrawers:shroud_key>);

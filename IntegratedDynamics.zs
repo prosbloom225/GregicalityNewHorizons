@@ -210,7 +210,7 @@ assembler.recipeBuilder()
 recipes.remove(<integratedtunnels:part_exporter_item_item>);
 recipes.addShaped(<integratedtunnels:part_exporter_item_item>, 
 	[[<ore:gregToolScrewdriver>, <ore:plateAluminium>, <ore:gregToolWrench>], 
-	[<ore:screwAluminium>, <integrateddynamics:variable_transformer:1>, <ore:screwAluminium>], 
+	[<ore:screwAluminium>, <integrateddynamics:variable_transformer>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, pistonLv, <ore:plateAluminium>]]);
 assembler.recipeBuilder()
 	.inputs([<ore:plateAluminium> *3, pistonLv, <integrateddynamics:variable_transformer>])
