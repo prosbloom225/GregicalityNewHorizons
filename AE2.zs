@@ -54,6 +54,9 @@ mods.jei.JEI.removeAndHide(<appliedenergistics2:material:40>);
 
 // --- Recipes ---
 
+// Certus Quartz
+recipes.addShapeless(<appliedenergistics2:material>, [<gregtech:meta_item_1:8202>]);
+
 // Quartz Glass
 recipes.remove(<appliedenergistics2:quartz_glass>);
 alloy.recipeBuilder()
@@ -91,9 +94,9 @@ compressor.recipeBuilder()
 // Meteorite Compass
 recipes.remove(<appliedenergistics2:sky_compass>);
 recipes.addShaped(<appliedenergistics2:sky_compass>, 
-	[[<ore:craftingToolScrewdriver>, <ore:paneGlass>, <ore:screwSteel>], 
+	[[<ore:gregToolScrewdriver>, <ore:paneGlass>, <ore:screwSteel>], 
 	[<ore:plateSteel>, <ore:stickSteelMagnetic>, <ore:plateSteel>], 
-	[<ore:screwSteel>, <ore:plateSteel>, <ore:craftingToolHardHammer>]]);
+	[<ore:screwSteel>, <ore:plateSteel>, <ore:gregToolHardHammer>]]);
 	
 // Inscriber
 recipes.remove(<appliedenergistics2:inscriber>);
@@ -107,7 +110,7 @@ recipes.remove(<appliedenergistics2:wireless_access_point>);
 recipes.addShaped(<appliedenergistics2:wireless_access_point>, 
 	[[null, <appliedenergistics2:material:41>, null], 
 	[<ore:screwTitanium>, processorCalculation, <ore:screwTitanium>], 
-	[<ore:craftingToolScrewdriver>, meCable, <ore:craftingToolWrench>]]);
+	[<ore:gregToolScrewdriver>, meCable, <ore:gregToolWrench>]]);
 	
 // Charger
 recipes.remove(<appliedenergistics2:charger>);
@@ -199,7 +202,7 @@ recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics
 // Cell Workbench
 recipes.remove(<appliedenergistics2:cell_workbench>);
 recipes.addShaped(<appliedenergistics2:cell_workbench>, 
-	[[<ore:craftingToolScrewdriver>, display, <ore:craftingToolWrench>], 
+	[[<ore:gregToolScrewdriver>, display, <ore:gregToolWrench>], 
 	[<ore:screwTitanium>, <minecraft:crafting_table>, <ore:screwTitanium>], 
 	[<ore:plateTitanium>, processorCalculation, <ore:plateTitanium>]]);
 	
@@ -228,7 +231,7 @@ recipes.addShaped(<appliedenergistics2:energy_acceptor>,
 recipes.remove(<appliedenergistics2:vibration_chamber>);
 recipes.addShaped(<appliedenergistics2:vibration_chamber>, 
 	[[<ore:plateTitanium>, <ore:screwTitanium>, <ore:plateTitanium>], 
-	[<ore:craftingToolScrewdriver>, <gregtech:machine:53>, <ore:craftingToolWrench>], 
+	[<ore:gregToolScrewdriver>, <gregtech:machine:53>, <ore:gregToolWrench>], 
 	[<ore:plateTitanium>, <appliedenergistics2:energy_acceptor>, <ore:plateTitanium>]]);
 	
 // Crystal Growth Accelerator
@@ -321,16 +324,16 @@ assembler.recipeBuilder()
 // Certus Quartz Cutting Knife
 recipes.remove(<appliedenergistics2:certus_quartz_cutting_knife>);
 recipes.addShaped(<appliedenergistics2:certus_quartz_cutting_knife>, 
-	[[<ore:craftingToolHardHammer>, <ore:screwTitanium>, <ore:stickWood>], 
+	[[<ore:gregToolHardHammer>, <ore:screwTitanium>, <ore:stickWood>], 
 	[<ore:crystalCertusQuartz>, <ore:stickWood>, <ore:screwTitanium>], 
-	[<ore:plateCertusQuartz>, <ore:crystalCertusQuartz>, <ore:craftingToolFile>]]);
+	[<ore:plateCertusQuartz>, <ore:crystalCertusQuartz>, <ore:gregToolFile>]]);
 	
 // Nether Quartz Cutting Knife
 recipes.remove(<appliedenergistics2:nether_quartz_cutting_knife>);
 recipes.addShaped(<appliedenergistics2:certus_quartz_cutting_knife>, 
-	[[<ore:craftingToolHardHammer>, <ore:screwTitanium>, <ore:stickWood>], 
+	[[<ore:gregToolHardHammer>, <ore:screwTitanium>, <ore:stickWood>], 
 	[<ore:gemNetherQuartz>, <ore:stickWood>, <ore:screwTitanium>], 
-	[<ore:plateNetherQuartz>, <ore:gemNetherQuartz>, <ore:craftingToolFile>]]);
+	[<ore:plateNetherQuartz>, <ore:gemNetherQuartz>, <ore:gregToolFile>]]);
 	
 // Entropy Manipulator
 recipes.remove(<appliedenergistics2:entropy_manipulator>);
@@ -361,7 +364,7 @@ recipes.remove(<appliedenergistics2:portable_cell>);
 recipes.addShaped(<appliedenergistics2:portable_cell>, 
 	[[null, <appliedenergistics2:storage_cell_1k>, null], 
 	[<ore:screwTitanium>, <appliedenergistics2:chest>, <ore:screwTitanium>], 
-	[<ore:craftingToolScrewdriver>, <appliedenergistics2:energy_cell>, <ore:craftingToolWrench>]]);
+	[<ore:gregToolScrewdriver>, <appliedenergistics2:energy_cell>, <ore:gregToolWrench>]]);
 
 // Color Applicator
 recipes.remove(<appliedenergistics2:color_applicator>);
@@ -391,97 +394,97 @@ recipes.addShaped(<appliedenergistics2:memory_card>,
 // View Cell
 recipes.remove(<appliedenergistics2:view_cell>);
 recipes.addShaped(<appliedenergistics2:view_cell>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, <ore:crystalCertusQuartz>, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolHardHammer>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolHardHammer>]]);
 recipes.addShapeless(<appliedenergistics2:view_cell>, [storageHousing, <ore:crystalCertusQuartz>]);
 
 // Storage Cell 1k
 recipes.remove(<appliedenergistics2:storage_cell_1k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_1k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, component1k, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:storage_cell_1k>, [storageHousing, component1k]);
 
 // Storage Cell 4k
 recipes.remove(<appliedenergistics2:storage_cell_4k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_4k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, component4k, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:storage_cell_4k>, [storageHousing, component4k]);
 
 // Storage Cell 16k
 recipes.remove(<appliedenergistics2:storage_cell_16k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_16k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, component16k, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:storage_cell_16k>, [storageHousing, component16k]);
 
 // Storage Cell 64k
 recipes.remove(<appliedenergistics2:storage_cell_64k>);
 recipes.addShaped(<appliedenergistics2:storage_cell_64k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, component64k, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:storage_cell_64k>, [storageHousing, component64k]);
 
 // Fluid Storage Cell 1k
 recipes.remove(<appliedenergistics2:fluid_storage_cell_1k>);
 recipes.addShaped(<appliedenergistics2:fluid_storage_cell_1k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateTitanium>, fluidComponent1k, <ore:plateTitanium>], 
-	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_1k>, [storageHousing, fluidComponent1k]);
 
 // Fluid Storage Cell 4k
 recipes.remove(<appliedenergistics2:fluid_storage_cell_4k>);
 recipes.addShaped(<appliedenergistics2:fluid_storage_cell_4k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateTitanium>, fluidComponent4k, <ore:plateTitanium>], 
-	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_4k>, [storageHousing, fluidComponent4k]);
 
 // Fluid Storage Cell 16k
 recipes.remove(<appliedenergistics2:fluid_storage_cell_16k>);
 recipes.addShaped(<appliedenergistics2:fluid_storage_cell_16k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateTitanium>, fluidComponent16k, <ore:plateTitanium>], 
-	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_16k>, [storageHousing, fluidComponent16k]);
 
 // Fluid Storage Cell 64k
 recipes.remove(<appliedenergistics2:fluid_storage_cell_64k>);
 recipes.addShaped(<appliedenergistics2:fluid_storage_cell_64k>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateTitanium>, fluidComponent64k, <ore:plateTitanium>], 
-	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateTitanium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:fluid_storage_cell_64k>, [storageHousing, fluidComponent64k]);
 
 // Spatial Storage Cell 2
 recipes.remove(<appliedenergistics2:spatial_storage_cell_2_cubed>);
 recipes.addShaped(<appliedenergistics2:spatial_storage_cell_2_cubed>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, spatialComponent2, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_2_cubed>, [storageHousing, spatialComponent2]);
 
 // Spatial Storage Cell 16
 recipes.remove(<appliedenergistics2:spatial_storage_cell_16_cubed>);
 recipes.addShaped(<appliedenergistics2:spatial_storage_cell_16_cubed>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, spatialComponent16, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_16_cubed>, [storageHousing, spatialComponent16]);
 
 // Spatial Storage Cell 128
 recipes.remove(<appliedenergistics2:spatial_storage_cell_128_cubed>);
 recipes.addShaped(<appliedenergistics2:spatial_storage_cell_128_cubed>, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwAluminium>], 
 	[<ore:plateStainlessSteel>, spatialComponent128, <ore:plateStainlessSteel>], 
-	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwAluminium>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 recipes.addShapeless(<appliedenergistics2:spatial_storage_cell_128_cubed>, [storageHousing, spatialComponent128]);
 
 
@@ -651,9 +654,9 @@ autoclave.recipeBuilder()
 // ME Storage Housing
 recipes.remove(storageHousing);
 recipes.addShaped(storageHousing, 
-	[[<ore:craftingToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwCertusQuartz>], 
+	[[<ore:gregToolHardHammer>, <ore:plateCertusQuartz>, <ore:screwCertusQuartz>], 
 	[<ore:plateStainlessSteel>, <ore:paneGlass>, <ore:plateStainlessSteel>], 
-	[<ore:screwCertusQuartz>, <ore:plateAluminium>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwCertusQuartz>, <ore:plateAluminium>, <ore:gregToolScrewdriver>]]);
 assembler.recipeBuilder()
 	.inputs([<ore:paneGlass>, <ore:plateCertusQuartz>, <ore:plateAluminium>, <ore:plateStainlessSteel>])
 	.outputs(storageHousing)
@@ -819,22 +822,22 @@ recipes.addShaped(<appliedenergistics2:material:42>,
 // Annihilation Plane
 recipes.remove(<appliedenergistics2:part:300>);
 recipes.addShaped(<appliedenergistics2:part:300>, 
-	[[<ore:craftingToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <minecraft:diamond_pickaxe>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreAnnihilation, <ore:screwAluminium>], 
 	[<ore:crystalFluix>, <ore:crystalFluix>, <ore:crystalFluix>]]);
 
 // ME Covered Cable
 recipes.remove(<appliedenergistics2:part:36>);
 recipes.addShaped(<appliedenergistics2:part:36>, 
-	[[<ore:plateRubber>, <ore:craftingToolSaw>, <ore:plateRubber>], 
+	[[<ore:plateRubber>, <ore:gregToolSaw>, <ore:plateRubber>], 
 	[meCable, meCable, meCable], 
 	[<ore:plateRubber>, null, <ore:plateRubber>]]);
 recipes.addShaped(<appliedenergistics2:part:36>, 
-	[[<ore:plateSiliconRubber>, <ore:craftingToolSaw>, <ore:plateSiliconRubber>], 
+	[[<ore:plateSiliconRubber>, <ore:gregToolSaw>, <ore:plateSiliconRubber>], 
 	[meCable, meCable, meCable], 
 	[<ore:plateSiliconRubber>, null, <ore:plateSiliconRubber>]]);
 recipes.addShaped(<appliedenergistics2:part:36>, 
-	[[<ore:plateStyreneButadieneRubber>, <ore:craftingToolSaw>, <ore:plateStyreneButadieneRubber>], 
+	[[<ore:plateStyreneButadieneRubber>, <ore:gregToolSaw>, <ore:plateStyreneButadieneRubber>], 
 	[meCable, meCable, meCable], 
 	[<ore:plateStyreneButadieneRubber>, null, <ore:plateStyreneButadieneRubber>]]);	
 assembler.recipeBuilder()
@@ -905,14 +908,14 @@ assembler.recipeBuilder()
 // ME Conversion Monitor
 recipes.remove(<appliedenergistics2:part:420>);
 recipes.addShaped(<appliedenergistics2:part:420>, 
-	[[<ore:craftingToolScrewdriver>, <appliedenergistics2:part:400>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <appliedenergistics2:part:400>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreFormation, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, coreAnnihilation, <ore:plateNetherQuartz>]]);
 	
 // ME Crafting Terminal
 recipes.remove(<appliedenergistics2:part:360>);
 recipes.addShaped(<appliedenergistics2:part:360>, 
-	[[<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <appliedenergistics2:part:380>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, <ore:workbench>, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, processorEngineering, <ore:plateNetherQuartz>]]);
 
@@ -927,14 +930,14 @@ assembler.recipeBuilder()
 // ME Export Bus
 recipes.remove(<appliedenergistics2:part:260>);
 recipes.addShaped(<appliedenergistics2:part:260>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateTitanium>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateTitanium>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreFormation, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, pistonLv, <ore:plateNetherQuartz>]]);
 
 // ME Fluid Annihilation Plane
 recipes.remove(<appliedenergistics2:part:302>);
 recipes.addShaped(<appliedenergistics2:part:302>, 
-	[[<ore:craftingToolScrewdriver>, <ore:pipeLargeTitanium>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:pipeLargeTitanium>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreAnnihilation, <ore:screwAluminium>], 
 	[<ore:crystalFluix>, <ore:crystalFluix>, <ore:crystalFluix>]]);
 
@@ -983,7 +986,7 @@ recipes.addShaped(<appliedenergistics2:part:520>,
 // ME Formation Plane
 recipes.remove(<appliedenergistics2:part:320>);
 recipes.addShaped(<appliedenergistics2:part:320>, 
-	[[<ore:craftingToolScrewdriver>, <minecraft:hopper>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <minecraft:hopper>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreFormation, <ore:screwAluminium>], 
 	[<ore:crystalFluix>, <ore:crystalFluix>, <ore:crystalFluix>]]);
 
@@ -994,14 +997,14 @@ recipes.addShapeless(<appliedenergistics2:part:301>, [<appliedenergistics2:part:
 // ME Import Bus
 recipes.remove(<appliedenergistics2:part:240>);
 recipes.addShaped(<appliedenergistics2:part:240>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateTitanium>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateTitanium>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, coreAnnihilation, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, pistonLv, <ore:plateNetherQuartz>]]);
 
 // ME Interface Terminal
 recipes.remove(<appliedenergistics2:part:480>);
 recipes.addShaped(<appliedenergistics2:part:480>, 
-	[[<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>], 
+	[[<ore:gregToolScrewdriver>, <appliedenergistics2:part:380>, <ore:gregToolSoftHammer>], 
 	[<ore:screwAluminium>, <appliedenergistics2:part:440>, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, processorEngineering, <ore:plateNetherQuartz>]]);
 
@@ -1031,14 +1034,14 @@ assembler.recipeBuilder()
 // P2P Bus
 recipes.remove(<appliedenergistics2:part:460>);
 recipes.addShaped(<appliedenergistics2:part:460>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateTitanium>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateTitanium>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, processorEngineering, <ore:screwAluminium>], 
 	[<ore:crystalFluix>, <ore:crystalFluix>, <ore:crystalFluix>]]);
 
 // ME Pattern Terminal
 recipes.remove(<appliedenergistics2:part:340>);
 recipes.addShaped(<appliedenergistics2:part:340>, 
-	[[<ore:craftingToolScrewdriver>, <appliedenergistics2:part:380>, <ore:craftingToolSoftHammer>], 
+	[[<ore:gregToolScrewdriver>, <appliedenergistics2:part:380>, <ore:gregToolSoftHammer>], 
 	[<ore:screwAluminium>, <appliedenergistics2:material:52>, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, processorEngineering, <ore:plateNetherQuartz>]]);
 
@@ -1056,7 +1059,7 @@ wiremill.recipeBuilder()
 // Illuminated Panel
 recipes.remove(<appliedenergistics2:part:180>);
 recipes.addShaped(<appliedenergistics2:part:180>, 
-	[[<ore:craftingToolScrewdriver>, <ore:plateTitanium>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:plateTitanium>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, display, <ore:screwAluminium>], 
 	[<ore:plateGlowstone>, <ore:plateRedAlloy>, <ore:plateGlowstone>]]);
 assembler.recipeBuilder()
@@ -1068,23 +1071,23 @@ assembler.recipeBuilder()
 // ME Storage Bus
 recipes.remove(<appliedenergistics2:part:220>);
 recipes.addShaped(<appliedenergistics2:part:220>, 
-	[[<ore:craftingToolScrewdriver>, <ore:chestWood>, <ore:craftingToolHardHammer>], 
-	[<ore:screwCertusQuartz>, <appliedenergistics2:part:440>, <ore:screwCertusQuartz>], 
+	[[<ore:gregToolScrewdriver>, <ore:chestWood>, <ore:gregToolHardHammer>], 
+	[<ore:screwAluminium>, <appliedenergistics2:part:440>, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, pistonLv, <ore:plateNetherQuartz>]]);
 
 // ME Storage Monitor
 recipes.remove(<appliedenergistics2:part:400>);
 recipes.addShaped(<appliedenergistics2:part:400>, 
-	[[<ore:craftingToolScrewdriver>, <ore:itemIlluminatedPanel>, <ore:craftingToolHardHammer>], 
+	[[<ore:gregToolScrewdriver>, <ore:itemIlluminatedPanel>, <ore:gregToolHardHammer>], 
 	[<ore:screwAluminium>, <appliedenergistics2:part:280>, <ore:screwAluminium>], 
 	[<ore:plateNetherQuartz>, <ore:plateNetherQuartz>, <ore:plateNetherQuartz>]]);
 
 // ME Terminal
 recipes.remove(<appliedenergistics2:part:380>);
 recipes.addShaped(<appliedenergistics2:part:380>, 
-	[[<ore:stickNetherQuartz>, <ore:screwQuartzite>, <ore:stickNetherQuartz>], 
+	[[<ore:stickNetherQuartz>, <ore:screwStainlessSteel>, <ore:stickNetherQuartz>], 
 	[<ore:itemIlluminatedPanel>, <ore:circuitGood>, <ore:plateCertusQuartz>], 
-	[<ore:stickNetherQuartz>, <ore:craftingToolScrewdriver>, <ore:stickNetherQuartz>]]);
+	[<ore:stickNetherQuartz>, <ore:gregToolScrewdriver>, <ore:stickNetherQuartz>]]);
 
 // ME Toggle Bus
 recipes.remove(<appliedenergistics2:part:80>);

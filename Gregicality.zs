@@ -15,6 +15,13 @@ forming.recipeBuilder()
 	.outputs(colouredLeds)
 	.duration(100).EUt(30).buildAndRegister();
 
+// Wood Gear
+recipes.addShaped(<gregtech:meta_item_2:26196>, 
+	[[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+	[<ore:plankWood>, null, <ore:plankWood>],
+	[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]]);
+
+
 
 // Display
 // TODO - remove hv display recipes

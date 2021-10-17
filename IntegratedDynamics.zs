@@ -88,8 +88,8 @@ recipes.addShaped(<integrateddynamics:part_connector_omni_directional_item> * 2,
 
 // Logic Cable
 recipes.remove(<integrateddynamics:cable>);
-wiremill.recipeBuilder()
-	.inputs([<integrateddynamics:crystalized_menril_chunk> *4])
+forming.recipeBuilder()
+	.inputs([<ore:foilAluminium> *4, <ore:cableGtSingleCopper>])
 	.outputs(<integrateddynamics:cable>)
 	.duration(160).EUt(16).buildAndRegister();
 	

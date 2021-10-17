@@ -20,7 +20,7 @@ recipes.addShaped(<storagedrawers:compdrawers>,
 recipes.remove(<storagedrawers:controller>);
 recipes.addShaped(<storagedrawers:controller>, 
 	[[<ore:plateStainlessSteel>, <ore:circuitGood>, <ore:plateStainlessSteel>],
-	[<thaumcraft:redstone_relay>, <ore:drawerBasic>, <thaumcraft:redstone_relay>],
+	[<minecraft:repeater>, <ore:drawerBasic>, <minecraft:repeater>],
 	[<ore:plateEnderEye>, <ore:plateDiamond>, <ore:plateEnderEye>]]);
 
 // Controller Slave

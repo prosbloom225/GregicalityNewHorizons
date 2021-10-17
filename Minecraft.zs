@@ -453,7 +453,7 @@ recipes.remove(<minecraft:repeater>);
 recipes.addShaped(<minecraft:repeater>, 
     [[<ore:screwIron>, null, <ore:screwIron>],
     [<minecraft:redstone_torch>, <ore:gregToolScrewdriver>, <minecraft:redstone_torch>],
-    [<minecraft:stone_pressure_plate>, <ore:stickRedAlloy>, <minecraft:stone_pressure_plate>]]);
+    [<minecraft:stone_pressure_plate>, <ore:plateRedAlloy>, <minecraft:stone_pressure_plate>]]);
 assembler.recipeBuilder()
 	.inputs(<minecraft:redstone_torch> *2, <ore:dustRedstone>)
 	.outputs(<minecraft:repeater>)
