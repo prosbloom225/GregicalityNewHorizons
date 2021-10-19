@@ -140,7 +140,7 @@ recipes.addShaped(<forestry:pipette>,
 
 // Woven Silk
 recipes.remove(<forestry:crafting_material:3>);
-recipes.addShaped(<forestry:pipette>, 
+recipes.addShaped(<forestry:crafting_material:3>, 
     [[<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>],
     [<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>],
     [<forestry:crafting_material:2>, <forestry:crafting_material:2>, <forestry:crafting_material:2>]]);

@@ -96,77 +96,77 @@ recipes.remove(<bloodarsenal:blood_infused_wooden_pickaxe>);
 recipes.addShaped(<bloodarsenal:blood_infused_wooden_pickaxe>, 
 	[[<bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>],
 	[<ore:screwStainlessSteel>, <bloodarsenal:base_item:1>, <ore:screwStainlessSteel>],
-	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:base_item:1>, <ore:craftingToolScrewdriver>]]);
+	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:base_item:1>, <ore:gregToolScrewdriver>]]);
 
 // Blood Infused Wooden Axe
 recipes.remove(<bloodarsenal:blood_infused_wooden_axe>);
 recipes.addShaped(<bloodarsenal:blood_infused_wooden_axe>, 
 	[[<bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>, <ore:screwStainlessSteel>],
-	[<bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:base_item:1>, <ore:craftingToolScrewdriver>],
+	[<bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:base_item:1>, <ore:gregToolScrewdriver>],
 	[<ore:screwStainlessSteel>, <bloodarsenal:base_item:1>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"})]]);
 
 // Blood Infused Wooden Shovel
 recipes.remove(<bloodarsenal:blood_infused_wooden_shovel>);
 recipes.addShaped(<bloodarsenal:blood_infused_wooden_shovel>, 
 	[[<ore:screwStainlessSteel>, <bloodarsenal:blood_infused_wooden_planks>, <ore:screwStainlessSteel>],
-	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:base_item:1>, <ore:craftingToolScrewdriver>],
+	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:base_item:1>, <ore:gregToolScrewdriver>],
 	[null, <bloodarsenal:base_item:1>, null]]);
 
 // Blood Infused Wooden Sword
 recipes.remove(<bloodarsenal:blood_infused_wooden_sword>);
 recipes.addShaped(<bloodarsenal:blood_infused_wooden_sword>, 
 	[[<ore:screwStainlessSteel>, <bloodarsenal:blood_infused_wooden_planks>, <ore:screwStainlessSteel>],
-	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:blood_infused_wooden_planks>, <ore:craftingToolScrewdriver>],
+	[<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <bloodarsenal:blood_infused_wooden_planks>, <ore:gregToolScrewdriver>],
 	[null, <bloodarsenal:base_item:1>, null]]);
 
 // Blood Infused Wooden Sickle
 recipes.remove(<bloodarsenal:blood_infused_wooden_sickle>);
 recipes.addShaped(<bloodarsenal:blood_infused_wooden_sickle>, 
 	[[<ore:screwStainlessSteel>, <bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>],
-	[<ore:craftingToolScrewdriver>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <ore:craftingToolScrewdriver>],
+	[<ore:gregToolScrewdriver>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), <ore:gregToolScrewdriver>],
 	[<bloodarsenal:base_item:1>, <bloodarsenal:blood_infused_wooden_planks>, <bloodarsenal:blood_infused_wooden_planks>]]);
 
 // Blood Infused Iron Pickaxe
 recipes.remove(<bloodarsenal:blood_infused_iron_pickaxe>);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_pickaxe>, 
 	[[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:ingotBloodInfusedIron>, <ore:ingotBloodInfusedIron>], 
-	[<ore:screwTitanium>, <bloodarsenal:blood_infused_wooden_pickaxe>, <ore:craftingToolScrewdriver>], 
+	[<ore:screwTitanium>, <bloodarsenal:blood_infused_wooden_pickaxe>, <ore:gregToolScrewdriver>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodarsenal:base_item:9>]]);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_pickaxe>, 
 	[[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:ingotBloodInfusedIron>, <ore:ingotBloodInfusedIron>], 
-	[<ore:screwTitanium>, <bloodarsenal:blood_infused_wooden_pickaxe>, <ore:craftingToolScrewdriver>], 
+	[<ore:screwTitanium>, <bloodarsenal:blood_infused_wooden_pickaxe>, <ore:gregToolScrewdriver>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodarsenal:base_item:9>]]);
 	
 // Blood Infused Iron Axe
 recipes.remove(<bloodarsenal:blood_infused_iron_axe>);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_axe>, 
 	[[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:ingotBloodInfusedIron>, <ore:screwTitanium>], 
-	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_axe>, <ore:craftingToolScrewdriver>], 
+	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_axe>, <ore:gregToolScrewdriver>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodarsenal:base_item:9>]]);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_axe>, 
 	[[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:ingotBloodInfusedIron>, <ore:screwTitanium>], 
-	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_axe>, <ore:craftingToolScrewdriver>], 
+	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_axe>, <ore:gregToolScrewdriver>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodarsenal:base_item:9>]]);
 	
 // Blood Infused Iron Shovel
 recipes.remove(<bloodarsenal:blood_infused_iron_shovel>);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_shovel>, 
 	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:screwTitanium>], 
-	[<ore:craftingToolScrewdriver>, <bloodarsenal:blood_infused_wooden_shovel>, <ore:screwTitanium>], 
+	[<ore:gregToolScrewdriver>, <bloodarsenal:blood_infused_wooden_shovel>, <ore:screwTitanium>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodarsenal:base_item:9>]]);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_shovel>, 
 	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:screwTitanium>], 
-	[<ore:craftingToolScrewdriver>, <bloodarsenal:blood_infused_wooden_shovel>, <ore:screwTitanium>], 
+	[<ore:gregToolScrewdriver>, <bloodarsenal:blood_infused_wooden_shovel>, <ore:screwTitanium>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodarsenal:base_item:9>]]);
 	
 // Blood Infused Iron Sword
 recipes.remove(<bloodarsenal:blood_infused_iron_sword>);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_sword>, 
-	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:craftingToolScrewdriver>], 
+	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:gregToolScrewdriver>], 
 	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_sword>, <ore:screwTitanium>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:master"}), <bloodarsenal:base_item:9>]]);
 recipes.addShaped(<bloodarsenal:blood_infused_iron_sword>, 
-	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:craftingToolScrewdriver>], 
+	[[<ore:screwTitanium>, <tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <ore:gregToolScrewdriver>], 
 	[<tconstruct:large_plate>.withTag({Material: "blood_infused_iron"}), <bloodarsenal:blood_infused_wooden_sword>, <ore:screwTitanium>], 
 	[<bloodarsenal:base_item:9>, <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:archmage"}), <bloodarsenal:base_item:9>]]);
 

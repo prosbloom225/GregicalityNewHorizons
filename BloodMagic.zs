@@ -400,7 +400,7 @@ recipes.remove(<bloodmagic:sacrificial_dagger>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("sacrificial_dagger", "", 100, 
 	[<aspect:terra> *20, <aspect:perditio> *20, <aspect:aer> *10, <aspect:ordo> *10], 
 	<bloodmagic:sacrificial_dagger>, 
-	[[<ore:screwSteel>, <ore:slimeballBlood>, <ore:craftingToolScrewdriver>], 
+	[[<ore:screwSteel>, <ore:slimeballBlood>, <ore:gregToolScrewdriver>], 
 	[<ore:plateAluminium>, <minecraft:diamond_sword>, <ore:slimeballBlood>], 
 	[<ore:stickSteel>, <ore:plateAluminium>, <ore:screwSteel>]]);
 	
@@ -893,7 +893,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("sentient_sword", "", 150,
 	<bloodmagic:sentient_sword>, 
 	[[<ore:screwAluminium>, <bloodmagic:slate>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <thaumcraft:elemental_sword>, <ore:plateAluminium>], 
-	[<ore:craftingToolHardHammer>, <bloodmagic:slate>, <ore:craftingToolScrewdriver>]]);	
+	[<ore:gregToolHardHammer>, <bloodmagic:slate>, <ore:gregToolScrewdriver>]]);	
 	
 // Sentient Bow
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:bow>, <bloodmagic:soul_gem:1>, <minecraft:string>, <minecraft:string>]);
@@ -902,7 +902,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("sentient_bow", "", 150,
 	<bloodmagic:sentient_bow>, 
 	[[<ore:screwAluminium>, <bloodmagic:slate>, <ore:screwAluminium>], 
 	[<ore:plateAluminium>, <thaumcraft:turret>, <ore:plateAluminium>], 
-	[<ore:craftingToolHardHammer>, <bloodmagic:slate>, <ore:craftingToolScrewdriver>]]);
+	[<ore:gregToolHardHammer>, <bloodmagic:slate>, <ore:gregToolScrewdriver>]]);
 
 // Sentient Armour Gem	
 mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:diamond_chestplate>, <bloodmagic:soul_gem:1>, <minecraft:obsidian>, <minecraft:iron_block>]);

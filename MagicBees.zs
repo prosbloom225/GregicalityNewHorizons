@@ -1,7 +1,7 @@
 import mods.thaumcraft.Crucible;
 import mods.thaumcraft.Infusion;
 
-
+// TODO - magicbees combs need gt centrifuge recipes
 // --- Vals ---
 
 
@@ -55,9 +55,9 @@ mods.thaumcraft.Infusion.registerRecipe("dimensional_singularity", "", <magicbee
 // Level 0
 recipes.remove(<magicbees:mysteriousmagnet:*>);
 recipes.addShaped(<magicbees:mysteriousmagnet>, 
-	[[<ore:craftingToolWrench>, <ore:plateIron>, <ore:screwSteelMagnetic>], 
+	[[<ore:gregToolWrench>, <ore:plateIron>, <ore:screwSteelMagnetic>], 
 	[<minecraft:compass>, <magicbees:resource:13>, <minecraft:compass>], 
-	[<ore:screwSteelMagnetic>, <ore:gemExquisiteDiamond>, <ore:craftingToolScrewdriver>]]);
+	[<ore:screwSteelMagnetic>, <ore:gemExquisiteDiamond>, <ore:gregToolScrewdriver>]]);
 // Level 1
 assembler.recipeBuilder()
 	.inputs([<magicbees:resource:13>, <magicbees:mysteriousmagnet> *2])

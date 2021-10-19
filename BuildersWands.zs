@@ -11,14 +11,14 @@
 // Stone Wand
 recipes.remove(<betterbuilderswands:wandstone>);
 recipes.addShaped(<betterbuilderswands:wandstone>,
-	[[<ore:craftingToolSwaw>, <ore:screwIron>, <ore:plateStone>],
+	[[<ore:gregToolSwaw>, <ore:screwIron>, <ore:plateStone>],
 	[null, <ore:stickWood>, <ore:screwIron>],
 	[<ore:stickWood>, null, null]]);
 	
 // Iron Wand
 recipes.remove(<betterbuilderswands:wandiron>);
 recipes.addShaped(<betterbuilderswands:wandiron>,
-	[[<ore:craftingToolSwaw>, <ore:screwIron>, <ore:plateDenseIron>],
+	[[<ore:gregToolSwaw>, <ore:screwIron>, <ore:plateDenseIron>],
 	[null, <ore:stickIron>, <ore:screwIron>],
 	[<ore:stickIron>, null, null]]);
 	

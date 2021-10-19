@@ -265,9 +265,9 @@ assembler.recipeBuilder()
 // Integrated Circuit Board
 recipes.remove(<genetics:misc:8>);
 recipes.addShaped(<genetics:misc:8>,
-	[[<ore:screwStainlessSteel>, <ore:craftingToolScrewdriver>, <ore:screwStainlessSteel>],
+	[[<ore:screwStainlessSteel>, <ore:gregToolScrewdriver>, <ore:screwStainlessSteel>],
 	[<ore:circuitAdvanced>, <forestry:chipsets:1>,<ore:circuitAdvanced>],
-	[<ore:screwStainlessSteel>, <ore:craftingToolWrench>, <ore:screwStainlessSteel>]]);
+	[<ore:screwStainlessSteel>, <ore:gregToolWrench>, <ore:screwStainlessSteel>]]);
 assembler.recipeBuilder()
 	.inputs([<ore:circuitAdvanced> *2, <forestry:chipsets:1>])
 	.outputs(<genetics:misc:8>)

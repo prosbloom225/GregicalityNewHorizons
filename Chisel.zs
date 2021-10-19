@@ -7,16 +7,16 @@
 // Iron Chisel
 recipes.remove(<chisel:chisel_iron>);
 recipes.addShaped(<chisel:chisel_iron>,
-    [[<ore:craftingToolHardHammer>, <ore:plateIron>, <ore:plateIron>],
+    [[<ore:gregToolHardHammer>, <ore:plateIron>, <ore:plateIron>],
     [<ore:screwIron>, <ore:stickWood>, <ore:plateIron>],
-    [<ore:stickWood>, <ore:screwIron>, <ore:craftingToolScrewdriver>]]);
+    [<ore:stickWood>, <ore:screwIron>, <ore:gregToolScrewdriver>]]);
 
 // Diamond Chisel
 recipes.remove(<chisel:chisel_diamond>);
 recipes.addShaped(<chisel:chisel_diamond>,
-    [[<ore:craftingToolHardHammer>, <ore:plateDiamond>, <ore:plateDiamond>],
+    [[<ore:gregToolHardHammer>, <ore:plateDiamond>, <ore:plateDiamond>],
     [<ore:screwSteel>, <ore:stickSteel>, <ore:plateDiamond>],
-    [<ore:stickSteel>, <ore:screwSteel>, <ore:craftingToolScrewdriver>]]);
+    [<ore:stickSteel>, <ore:screwSteel>, <ore:gregToolScrewdriver>]]);
 
 // iChisel
 recipes.remove(<chisel:chisel_hitech>);
@@ -28,6 +28,6 @@ assembler.recipeBuilder()
 // Ender Offset Wand
 recipes.remove(<chisel:offsettool>);
 recipes.addShaped(<chisel:offsettool>,
-    [[<ore:craftingToolHardHammer>, <ore:plateEnderEye>, <ore:plateEnderEye>],
+    [[<ore:gregToolHardHammer>, <ore:plateEnderEye>, <ore:plateEnderEye>],
     [<ore:screwStainlessSteel>, <ore:stickSteel>, <ore:plateEnderEye>],
-    [<ore:stickSteel>, <ore:screwStainlessSteel>, <ore:craftingToolScrewdriver>]]);
+    [<ore:stickSteel>, <ore:screwStainlessSteel>, <ore:gregToolScrewdriver>]]);
