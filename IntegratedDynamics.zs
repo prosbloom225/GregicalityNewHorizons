@@ -135,6 +135,12 @@ recipes.addShaped(<integrateddynamics:labeller>,
 	[[null, <integrateddynamics:crystalized_menril_chunk>,  <ore:gregToolHardHammer>],
 	[null, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
 	[<integrateddynamics:crystalized_menril_chunk>, null, null]]);
+
+// Crystallized Menril
+extractor.recipeBuilder()
+	.inputs([<integrateddynamics:menril_log>])
+	.outputs(<integrateddynamics:crystalized_menril_chunk>)
+	.duration(200).EUt(120).buildAndRegister();
 	
 // Output Variable Transformer
 recipes.remove(<integrateddynamics:variable_transformer>);
@@ -294,3 +300,6 @@ recipes.addShaped(<integratedtunnels:part_player_simulator_item>,
 	[[<ore:plateAluminium>, <integratedtunnels:part_exporter_world_block_item>, <ore:plateAluminium>],
 	[<ore:gregToolWrench>, <thaumcraft:golem>.withTag({props: 0 as long}), <ore:gregToolHardHammer>],
 	[<ore:plateAluminium>, <integratedtunnels:part_importer_world_block_item>, <ore:plateAluminium>]]);
+
+
+

@@ -387,7 +387,7 @@ recipes.addShapeless(<appliedenergistics2:network_tool>, [<ore:itemQuartzWrench>
 // Memory Card
 recipes.remove(<appliedenergistics2:memory_card>);
 recipes.addShaped(<appliedenergistics2:memory_card>, 
-	[[processorCalculation, <ore:circuitExtreme>, <ore:plateTitanium>], 
+	[[processorCalculation, <ore:circuitAdvanced>, <ore:plateTitanium>], 
 	[<ore:plateGold>, <ore:plateRedAlloy>, <ore:plateGold>], 
 	[null, null, null]]);
 

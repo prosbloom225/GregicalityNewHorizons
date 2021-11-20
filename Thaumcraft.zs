@@ -422,6 +422,11 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("fabric", "",  10,
     [[null, <minecraft:string>, null],
     [<minecraft:string>, <forestry:crafting_material:3>, <minecraft:string>],
     [null, <minecraft:string>, null]]);
+// expensive bee alternative
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_2:32453> *8, <gregtech:meta_item_1:12470>, <gregtech:meta_item_2:32504> *8])
+	.outputs(<thaumcraft:fabric>)
+	.duration(500).EUt(500).buildAndRegister();
 	
 // Vis Resonator
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:vis_resonator>);
