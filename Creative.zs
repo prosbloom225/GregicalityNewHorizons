@@ -58,3 +58,6 @@ recipes.remove(<bloodmagic:activation_crystal:2>);
 
 // Flux Sponge
 recipes.remove(<thaumcraft:creative_flux_sponge>);
+
+// Creative Computer Case
+recipes.remove(<opencomputers:casecreative>);
