@@ -575,14 +575,14 @@ recipes.addShapeless(<minecraft:gold_nugget> *9,
 // Dirt
 mixer.recipeBuilder()
 	.inputs([<ore:dustStone> *1])
-    .fluidInputs([<forge:bucketfilled>.withTag({FluidName: "fermented_biomass", Amount: 100})
+    .fluidInputs([<liquid:fermented_biomass> *10])
 	.outputs(<minecraft:dirt>)
 	.duration(200).EUt(16).buildAndRegister();
 
 // Endstone
 mixer.recipeBuilder()
 	.inputs([<ore:dustStone> *1])
-    .fluidInputs([<forge:bucketfilled>.withTag({FluidName: "nitrogen", Amount: 100})
+    .fluidInputs([<liquid:nitrogen> *100])
 	.notConsumable(<gregtech:meta_item_1:32724>)
 	.outputs(<minecraft:end_stone>)
 	.duration(200).EUt(120).buildAndRegister();
