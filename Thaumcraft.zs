@@ -115,8 +115,13 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("inlay", "INFUSIONSTABLE", 
 	[null, null, null], 
 	[null, null, null]]);
 
-// TODO - Workbench Charger
+// Workbench Charger
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:arcane_workbench_charger>);
+mods.thaumcraft.Infusion.registerRecipe("workbench_charger", "WORKBENCHCHARGER", <thaumcraft:arcane_workbench_charger>, 6, 
+	[<aspect:praecantatio> *50 , <aspect:fluctus> *50, <aspect:motus> *50, <aspect:ordo> *50], 
+    <gtadditions:ga_meta_item:32208>,
+		[<gregtech:meta_item_2:32213>, <thaumcraft:stone_arcane>, <gregtech:meta_item_2:32483>, <thaumcraft:stone_arcane>, 
+        <gregtech:meta_item_2:32213>, <thaumcraft:stone_arcane>, <gregtech:meta_item_2:32483>]);
 
 		
 // Thaumic Dioptra
