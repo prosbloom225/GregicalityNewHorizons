@@ -6,6 +6,9 @@ val microchipEv = <opencomputers:material:9>;
 val cpuEv = <opencomputers:component:2>;
 
 val grog = <opencomputers:material:1>;
+val arithmaticLogicUnit = <opencomputers:material:10>;
+val controlUnit = <opencomputers:material:11>;
+val diskPlatter = <opencomputers:material:12>;
 val interweb = <opencomputers:material:13>;
 val memoryMv = <opencomputers:component:6>;
 
@@ -18,17 +21,27 @@ val machineCasingMv = <gregtech:machine_casing:2>;
 val machineCasingHv = <gregtech:machine_casing:3>;
 val machineCasingEv = <gregtech:machine_casing:4>;
 val pistonLv = <gregtech:meta_item_1:32640>;
+val pistonMv = <gregtech:meta_item_1:32641>;
 val motorMv = <gregtech:meta_item_1:32601>;
+val motorHv = <gregtech:meta_item_1:32602>;
+val motorEv = <gregtech:meta_item_1:32603>;
 val robotArmLv = <gregtech:meta_item_1:32650>;
 val robotArmHv = <gregtech:meta_item_1:32652>;
 val sensorMv = <gregtech:meta_item_1:32691>;
+val sensorHv = <gregtech:meta_item_1:32692>;
 val circuitBoardPlastic = <gtadditions:ga_meta_item:32031>;
 val circuitBoardAdvanced = <gtadditions:ga_meta_item:32032>;
 val circuitBoardExtreme = <gtadditions:ga_meta_item:32033>;
 
 // --- Removes ---
+mods.jei.JEI.hide(<opencomputers:material>);
+mods.jei.JEI.hide(<opencomputers:material:2>);
+mods.jei.JEI.hide(<opencomputers:material:4>);
+mods.jei.JEI.hide(<opencomputers:material:6>);
 mods.jei.JEI.hide(<opencomputers:material:14>);
 mods.jei.JEI.hide(<opencomputers:material:15>);
+mods.jei.JEI.hide(<opencomputers:material:16>);
+mods.jei.JEI.hide(<opencomputers:material:29>);
 
 // --- Recipes ---
 // TODO - opencomputers
@@ -285,12 +298,12 @@ recipes.remove(grog);
 recipes.addShapeless(grog, [<extrabees:honey_drop:1>, <extrabees:honey_drop:1>, <forge:bucketfilled>.withTag({FluidName: "short.mead", Amount: 1000})]);
 
 // ALU
-recipes.remove(<opencomputers:material:10>);
+recipes.remove(arithmaticLogicUnit);
 assembler.recipeBuilder()
 	.inputs([circuitBoardPlastic, <gregtech:meta_item_2:32477> *16])
     .fluidInputs([<liquid:plastic> *72])
 	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
-	.outputs(<opencomputers:material:10>)
+	.outputs(arithmaticLogicUnit)
 	.duration(200).EUt(64).buildAndRegister();
 
 // Card Base
@@ -309,3 +322,334 @@ mixer.recipeBuilder()
 	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
 	.outputs(<opencomputers:material:28>)
 	.duration(200).EUt(120).buildAndRegister();
+
+// Control Unit
+recipes.remove(controlUnit);
+circuit_assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_2:32460> *2, <ore:circuitAdvanced>])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(controlUnit)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Disk Platter
+recipes.remove(diskPlatter);
+assembler.recipeBuilder()
+	.inputs([<ore:lensGlass>, <ore:foilAluminium> *4])
+    .fluidInputs([<liquid:cobalt> *36])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(controlUnit)
+	.duration(200).EUt(30).buildAndRegister();
+
+// Drone Case Tier 1
+recipes.remove(<opencomputers:material:23>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:material:20>, <opencomputers:component:4>, microchipHv *2, <ore:rotorStainlessSteel> *4, <ore:plateAluminium> *4, motorHv *4])
+    .fluidInputs([<liquid:plastic> *72])
+	.outputs(<opencomputers:material:23>)
+	.duration(300).EUt(256).buildAndRegister();
+
+// Drone Case Tier 2
+recipes.remove(<opencomputers:material:24>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:material:21>, <opencomputers:component:5>, microchipEv *2, <ore:rotorTitanium> *4, <ore:plateTitanium> *4, motorEv *4])
+    .fluidInputs([<liquid:plastic> *72])
+	.outputs(<opencomputers:material:24>)
+	.duration(300).EUt(480).buildAndRegister();
+
+// TODO - Drone Case Tier 3
+recipes.remove(<opencomputers:material:25>);
+
+// Ink Cartridge
+recipes.remove(<opencomputers:material:27>);
+mixer.recipeBuilder()
+	.inputs([<opencomputers:material:26>, <ore:dyeBlack>, <ore:dyeCyan>, <ore:dyeYellow>, <ore:dyeMagenta>])
+    .fluidInputs([<liquid:water> *1000])
+	.outputs(<opencomputers:material:27>)
+	.duration(200).EUt(64).buildAndRegister();
+
+// Ink Cartridge (Empty)
+recipes.remove(<opencomputers:material:26>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, microchipMv, <gregtech:meta_item_2:32461>, <ore:pipeTinyPlastic> *8, <ore:boltElectrum> *8])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:material:26>)
+	.duration(200).EUt(64).buildAndRegister();
+
+// Interweb
+recipes.remove(interweb);
+assembler.recipeBuilder()
+	.inputs([<ore:platePlastic>, <minecraft:string> *8])
+    .fluidInputs([<liquid:glue> *576])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(interweb)
+	.duration(200).EUt(64).buildAndRegister();
+
+// Microchip Tier 1
+recipes.remove(microchipMv);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, <ore:circuitGood>, <gtadditions:ga_meta_item:32240> *2, <ore:foilElectrum> *4])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(microchipMv)
+	.duration(300).EUt(120).buildAndRegister();
+
+// Microchip Tier 2
+recipes.remove(microchipHv);
+assembler.recipeBuilder()
+	.inputs([circuitBoardAdvanced, <ore:circuitAdvanced>, <gregtech:meta_item_2:32460> *2, <ore:foilElectrum> *8])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+	.outputs(microchipHv)
+	.duration(300).EUt(256).buildAndRegister();
+
+// Microchip Tier 3
+recipes.remove(microchipEv);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, <ore:circuitExtreme>, <gregtech:meta_item_2:32460> *8, <ore:foilElectrum> *16])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(microchipEv)
+	.duration(300).EUt(480).buildAndRegister();
+
+// Microcontroller Case Tier 1
+recipes.remove(<opencomputers:material:20>);
+assembler.recipeBuilder()
+	.inputs([machineCasingMv, circuitBoardPlastic, microchipHv, <ore:plateAluminium> *2])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:material:20>)
+	.duration(200).EUt(120).buildAndRegister();
+
+// Microcontroller Case Tier 2
+recipes.remove(<opencomputers:material:21>);
+assembler.recipeBuilder()
+	.inputs([machineCasingHv, circuitBoardAdvanced, microchipEv, <ore:plateTitanium> *2])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:material:21>)
+	.duration(200).EUt(256).buildAndRegister();
+
+// TODO - Microcontroller Case Tier 3
+recipes.remove(<opencomputers:material:22>);
+
+// Tablet Case Tier 1
+recipes.remove(<opencomputers:material:17>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:screen2>, circuitBoardPlastic, microchipHv *2, <opencomputers:component:3>, microchipMv *2, <ore:foilElectrum> *4])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.outputs(<opencomputers:material:17>)
+	.duration(200).EUt(120).buildAndRegister();
+
+// Tablet Case Tier 2
+recipes.remove(<opencomputers:material:18>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:screen3>, circuitBoardAdvanced, microchipEv *2, <opencomputers:component:5>, microchipMv *2, <ore:foilElectrum> *4])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.outputs(<opencomputers:material:18>)
+	.duration(400).EUt(256).buildAndRegister();
+
+// Analyzer
+recipes.remove(<opencomputers:tool>);
+assembler.recipeBuilder()
+	.inputs([<gregtech:meta_item_2:32579>, microchipHv *2, <gtadditions:ga_meta_item:32240> *2, sensorHv])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.outputs(<opencomputers:tool>)
+	.duration(300).EUt(120).buildAndRegister();
+
+// Nanomachines
+recipes.remove(<opencomputers:tool:5>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:capacitor>, <opencomputers:component:8> *2, <opencomputers:card:7>, <opencomputers:component:1> *2, <opencomputers:material:1>, <opencomputers:material:28> *9])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.outputs(<opencomputers:tool:5>)
+	.duration(400).EUt(256).buildAndRegister();
+
+// Remote Terminal
+recipes.remove(<opencomputers:tool:2>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:screen2>, <opencomputers:upgrade:22>, <opencomputers:card:7>, microchipEv *2, <opencomputers:keyboard>])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:tool:2>)
+	.duration(400).EUt(120).buildAndRegister();
+
+// Hover Boots
+recipes.remove(<opencomputers:hoverboots>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:capacitor>, <opencomputers:material:23>, <opencomputers:upgrade:28>, <ore:plateAluminium> *4, pistonMv *2])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:hoverboots>)
+	.duration(500).EUt(256).buildAndRegister();
+
+// APU Tier 2
+recipes.remove(<opencomputers:component:16>);
+assembler.recipeBuilder()
+	.inputs([arithmaticLogicUnit *32, <opencomputers:material:11> *4, <ore:circuitExtreme>, <ore:plateAluminium>])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:16>)
+	.duration(200).EUt(256).buildAndRegister();
+
+// APU Tier 3
+recipes.remove(<opencomputers:component:17>);
+assembler.recipeBuilder()
+	.inputs([arithmaticLogicUnit *64, <opencomputers:material:11> *8, <ore:circuitElite>, <ore:plateAluminium>])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+	.outputs(<opencomputers:component:17>)
+	.duration(200).EUt(480).buildAndRegister();
+
+// Component Bus Tier 1
+recipes.remove(<opencomputers:component:3>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, microchipMv *2, controlUnit, <ore:wireFineRedAlloy> *8])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:3>)
+	.duration(100).EUt(120).buildAndRegister();
+
+// Component Bus Tier 2
+recipes.remove(<opencomputers:component:4>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardAdvanced, microchipHv *2, controlUnit *4, <opencomputers:component:8>, <ore:wireFineGold> *8])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:4>)
+	.duration(100).EUt(256).buildAndRegister();
+
+// Component Bus Tier 3
+recipes.remove(<opencomputers:component:5>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, microchipEv *2, controlUnit *8, <opencomputers:component:10>, <ore:wireFineTitanium> *8])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:5>)
+	.duration(100).EUt(480).buildAndRegister();
+
+// Central Processing Unit Tier 1
+recipes.remove(<opencomputers:component>);
+assembler.recipeBuilder()
+	.inputs([arithmaticLogicUnit *8, controlUnit, <ore:circuitGood>, <ore:plateAluminium>])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component>)
+	.duration(200).EUt(120).buildAndRegister();
+
+// Central Processing Unit Tier 2
+recipes.remove(<opencomputers:component:1>);
+assembler.recipeBuilder()
+	.inputs([arithmaticLogicUnit *12, controlUnit *2, <ore:circuitAdvanced>, <ore:plateAluminium>])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(<opencomputers:component:1>)
+	.duration(200).EUt(120).buildAndRegister();
+
+// Central Processing Unit Tier 3
+recipes.remove(<opencomputers:component:2>);
+assembler.recipeBuilder()
+	.inputs([arithmaticLogicUnit *16, controlUnit *4, <ore:circuitExtreme>, <ore:plateAluminium>])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 3}))
+	.outputs(<opencomputers:component:2>)
+	.duration(200).EUt(120).buildAndRegister();
+
+// Disk Drive
+recipes.remove(<opencomputers:component:20>);
+assembler.recipeBuilder()
+	.inputs([<opencomputers:diskdrive>, microchipMv, circuitBoardAdvanced, <ore:stickSteel> *8, <ore:plateDenseLead> *4])
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:20>)
+	.duration(200).EUt(480).buildAndRegister();
+
+// Memory Tier 1
+recipes.remove(<opencomputers:component:6>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, <gregtech:meta_item_2:32485> *16, microchipMv *2, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:6>)
+	.duration(250).EUt(64).buildAndRegister();
+
+// Memory Tier 1.5
+recipes.remove(<opencomputers:component:7>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, <gregtech:meta_item_2:32485> *32, microchipMv *4, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(<opencomputers:component:7>)
+	.duration(250).EUt(64).buildAndRegister();
+
+// Memory Tier 2 
+recipes.remove(<opencomputers:component:8>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardAdvanced, <gregtech:meta_item_2:32485> *64, microchipHv *2, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:8>)
+	.duration(250).EUt(256).buildAndRegister();
+
+// Memory Tier 2.5
+recipes.remove(<opencomputers:component:9>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardAdvanced, <gregtech:meta_item_2:32485> *64, <gregtech:meta_item_2:32480> *16, microchipHv *4, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(<opencomputers:component:9>)
+	.duration(250).EUt(256).buildAndRegister();
+
+// Memory Tier 3
+recipes.remove(<opencomputers:component:10>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, <gregtech:meta_item_2:32485> *64, <gregtech:meta_item_2:32480> *32, microchipEv *2, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:10>)
+	.duration(250).EUt(1024).buildAndRegister();
+
+// Memory Tier 3.5
+recipes.remove(<opencomputers:component:11>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, <gregtech:meta_item_2:32485> *64, <gregtech:meta_item_2:32480> *64, microchipEv *4, <ore:foilElectrum> *16]) 
+    .fluidInputs([<liquid:soldering_alloy> *72])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 2}))
+	.outputs(<opencomputers:component:11>)
+	.duration(250).EUt(1024).buildAndRegister();
+
+// Server Tier 1
+recipes.remove(<opencomputers:component:13>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardPlastic, <opencomputers:case1>, microchipMv *2, microchipHv, <opencomputers:component:9>])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:13>)
+	.duration(400).EUt(256).buildAndRegister();
+
+// Server Tier 2
+recipes.remove(<opencomputers:component:14>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardAdvanced, <opencomputers:case2>, microchipHv *2, microchipEv, <opencomputers:component:10>])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:14>)
+	.duration(400).EUt(480).buildAndRegister();
+
+// Server Tier 3
+recipes.remove(<opencomputers:component:15>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, <opencomputers:case3>, microchipEv *2, <ore:circuitElite>, <opencomputers:component:10> *2])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:15>)
+	.duration(400).EUt(1024).buildAndRegister();
+
+// Terminal Server
+recipes.remove(<opencomputers:component:19>);
+assembler.recipeBuilder()
+	.inputs([circuitBoardExtreme, <opencomputers:card:7> *3, microchipHv *2, <ore:plateDenseLead> *4, <ore:cableGtSingleCopper> *8])
+    .fluidInputs([<liquid:soldering_alloy> *144])
+	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: 1}))
+	.outputs(<opencomputers:component:19>)
+	.duration(400).EUt(480).buildAndRegister();
+

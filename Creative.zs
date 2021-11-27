@@ -61,3 +61,12 @@ recipes.remove(<thaumcraft:creative_flux_sponge>);
 
 // Creative Computer Case
 recipes.remove(<opencomputers:casecreative>);
+
+// Network Debugger
+recipes.remove(<opencomputers:tool:1>);
+
+// APU Tier 3
+recipes.remove(<opencomputers:component:18>);
+
+// Creative Server
+recipes.remove(<opencomputers:component:12>);
