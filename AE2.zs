@@ -605,7 +605,7 @@ recipes.addShaped(spatialComponent128,
 recipes.remove(component16k);
 recipes.addShaped(component16k, 
 	[[<ore:circuitGood>, component4k, <ore:circuitGood>], 
-	[component4k, <ore:circuitExtreme>, component4k], 
+	[component4k, <gregtech:meta_item_2:32481>, component4k], 
 	[<ore:circuitGood>, component4k, <ore:circuitGood>]]);
 	
 // Spatial Component 16
@@ -619,7 +619,7 @@ recipes.addShaped(spatialComponent16,
 recipes.remove(component1k);
 recipes.addShaped(component1k, 
 	[[<ore:circuitPrimitive>, <appliedenergistics2:material:1>, <ore:circuitPrimitive>], 
-	[<appliedenergistics2:material:1>, <ore:circuitExtreme>, <appliedenergistics2:material:1>], 
+	[<appliedenergistics2:material:1>, <gregtech:meta_item_2:32478>, <appliedenergistics2:material:1>], 
 	[<ore:circuitPrimitive>, <appliedenergistics2:material:1>, <ore:circuitPrimitive>]]);
 
 // Spatial Component 2
@@ -634,14 +634,14 @@ recipes.addShaped(spatialComponent2,
 recipes.remove(component4k);
 recipes.addShaped(component4k, 
 	[[<ore:circuitBasic>, component1k, <ore:circuitBasic>], 
-	[component1k, <ore:circuitExtreme>, component1k], 
+	[component1k, <gregtech:meta_item_2:32478>, component1k], 
 	[<ore:circuitBasic>, component1k, <ore:circuitBasic>]]);
 
 // Storage Component 64k
 recipes.remove(component64k);
 recipes.addShaped(component64k, 
 	[[<ore:circuitAdvanced>, component16k, <ore:circuitAdvanced>], 
-	[component16k, <ore:circuitExtreme>, component16k], 
+	[component16k, <gregtech:meta_item_2:32484>, component16k], 
 	[<ore:circuitAdvanced>, component16k, <ore:circuitAdvanced>]]);
 	
 // Charged Certus Quartz
