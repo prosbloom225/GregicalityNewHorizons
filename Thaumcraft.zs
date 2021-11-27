@@ -23,7 +23,7 @@ mods.jei.JEI.removeAndHide(<thaumcraft:amulet_vis>);
 
 // Arcane Stone Bricks
 recipes.remove(<thaumcraft:stone_arcane_brick>);
-assembler.recipeBuilder()
+engraver.recipeBuilder()
 	.inputs([<thaumcraft:stone_arcane>])
 	.outputs(<thaumcraft:stone_arcane_brick>)
 	.notConsumable(<ore:lensRuby>)
@@ -704,7 +704,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("grapple_gun_spool", "GRAPP
 // Goggles of Revealing
 mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
 mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("goggles", "BASEARTIFICE",  50, 
-	[<aspect:aer> *30, <aspect:terra> *30, <aspect:ignis> *30, <aspect:aqua> *30, <aspect:ordo> *30, <aspect:perditio> *30], 
+	[<aspect:aer> *10, <aspect:terra> *10, <aspect:ignis> *10, <aspect:aqua> *10, <aspect:ordo> *10, <aspect:perditio> *10], 
 	<thaumcraft:goggles>, 
 	[[<thaumcraft:fabric>, <ore:screwGold>, <thaumcraft:fabric>], 
 	[<ore:ringGold>, <ore:gregToolScrewdriver>, <ore:ringGold>], 
