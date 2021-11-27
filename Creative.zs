@@ -70,3 +70,9 @@ recipes.remove(<opencomputers:component:18>);
 
 // Creative Server
 recipes.remove(<opencomputers:component:12>);
+
+// Debug Card
+recipes.remove(<opencomputers:card>);
+
+// Component Bus Creative
+recipes.remove(<opencomputers:upgrade:32>);
