@@ -579,9 +579,16 @@ mixer.recipeBuilder()
 	.outputs(<minecraft:dirt>)
 	.duration(200).EUt(16).buildAndRegister();
 
+// Netherrack
+mixer.recipeBuilder()
+	.inputs([<ore:cobblestone> *1])
+    .fluidInputs([<liquid:redstone> *10])
+	.outputs(<minecraft:netherrack>)
+	.duration(200).EUt(16).buildAndRegister();
+
 // Endstone
 mixer.recipeBuilder()
-	.inputs([<ore:dustStone> *1])
+	.inputs([<ore:cobblestone> *1])
     .fluidInputs([<liquid:nitrogen> *100])
 	.notConsumable(<gregtech:meta_item_1:32724>)
 	.outputs(<minecraft:end_stone>)
